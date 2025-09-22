@@ -86,7 +86,7 @@ This guide will walk you through setting up a modern Python development environm
 **Commit your changes**: Use Git to commit and push your work regularly:
    ```bash
    git add .
-   git commit -m "replace with your commit msg"
+   git commit -m "first commit"
    git pull origin main
    git push origin main
    ```
