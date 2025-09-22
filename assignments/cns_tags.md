@@ -31,3 +31,14 @@ uv run python -m newspaper --url=YOUR_URL -of=text | llm -m groq/moonshotai/kimi
 For the purpose of this assignment, you'll put each command, the output from it and your evaluation of it in `notes.md`. The goal is to get a list of topics that are at most two words in length that would make it easier for a reader to find this story browsing by topic or searching by keyword. YOU MUST PROVIDE ALL OF THE COMMANDS, OUTPUT & EVALUATION TO GET FULL CREDIT.
 
 When you are done, add a paragraph or two to the bottom of the `notes.md` file about this assignment that focuses on the process. Was it easy to think of changes? Was it too repetitive? What do you think a better workflow would look like? Be creative: if you could control the whole process, how would it differ?
+
+When you are finished, add, commit and push your changes:
+
+```{bash}
+git add .
+git commit -m "replace with your commit msg"
+git pull origin main
+git push origin main
+```
+
+Submit the link to your `notes.md` file in ELMS.
