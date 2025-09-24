@@ -12,7 +12,6 @@ In your class repository, open a codespace and do the following:
 4. Create a file called notes.md using touch. Keep that file open.
 5. Open that document and put "CNS Embeddings" and today's date at the top, then save it
 6. Do cd .. twice to get back to the main directory (/workspaces/jour329w_fall2025)
-7. In the Terminal, do the git add, commit, pull and push your changes as described in the `setup.md` file.
 
 ### Setup
 
