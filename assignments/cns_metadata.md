@@ -46,7 +46,7 @@ uv run llm keys set anthropic
 and pasting in the key I will give to each of you.
 
 ```{bash}
-uv run python -m newspaper --url=YOUR_URL -of=text | llm -m groq/moonshotai/kimi-k2-instruct-0905 "Extract structured metadata from this news story and return as JSON with these exact fields:
+uv run python -m newspaper --url=YOUR_URL -of=text | uv run llm -m groq/moonshotai/kimi-k2-instruct-0905 "Extract structured metadata from this news story and return as JSON with these exact fields:
 {
   \"url\": \"the url of the story\",
   \"people\": [\"list of up to 3 people with their titles/roles\"],
