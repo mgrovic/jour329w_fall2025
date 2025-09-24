@@ -31,4 +31,15 @@ git merge upstream/main
 
 ### Explore
 
-In `notes.md`, describe your initial impressions of the CNS stories 
+In `notes.md`, describe your initial impressions of the visualization of the CNS stories. Click on them and see if you can tell how they are grouped together. Describe some of the larger groupings. Does this help you understand CNS coverage better? What would be more useful?
+
+When you are finished, add, commit and push your changes:
+
+```{bash}
+git add .
+git commit -m "replace with your commit msg"
+git pull origin main
+git push origin main
+```
+
+Submit the link to your `notes.md` file in ELMS.
