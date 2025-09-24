@@ -2,6 +2,15 @@
 
 Building on your work with CNS tags, this assignment will have you generate and compare metadata for news stories using LLMs. You'll extract not just topics, but also people, organizations, locations and other structured information that could be useful for newsrooms. You'll also have the LLMs make some subjective choices.
 
+### Setup
+
+Update from upstream: 
+
+```{bash}
+git fetch upstream
+git merge upstream/main
+```
+
 ### Getting Started
 
 In your class repository, open a codespace and do the following:
