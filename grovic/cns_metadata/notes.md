@@ -453,16 +453,130 @@ CASA
 up to 3 geographic locations
 Maryland 
 Chile 
+Baltimore 
 
 
 3 short (two-word) topics you would assign
 Immigration Policy 
-
+DREAM Act
+Educational Attainment
 
 
 what kind of story is this - breaking news, feature, analysis, investigation, other
-
+Feature
 
 
 a rating of the story's importance on a scale from 1 to 5, taking into account its impact on people (greater impact means higher score)
+4
 
+uv run python -m newspaper --url=https://cnsmaryland.org/2017/09/15/marylands-undocumented-immigrants-in-their-own-words/ -of=text | llm -m groq/moonshotai/kimi-k2-instruct-0905 "Extract structured metadata from this news story and return as JSON with these exact fields:
+{
+ \"url\": \"the url of the story\",
+ \"people\": [\"list of up to 3 people with their titles/roles\"],
+ \"organizations\": [\"government agencies, companies, groups mentioned\"], 
+ \"locations\": [\"cities, counties, states, specific places\"],
+ \"topics\": [\"3-5 topic tags, max 2 words each\"],
+ \"story_type\": \"breaking news, feature, analysis, investigation, other\",
+ \"impact\": \"a rating of the story's importance on a scale from 1 to 5, taking into account its impact on people\"
+}"
+
+LLM Answer-Groq
+"people": [
+    "Nathaly Uribe Robledo – DACA recipient, insurance agency employee",
+    "Cindy Kolade – DACA recipient, clinical lab assistant & Towson student",
+    "Jose Aguiluz – DACA recipient, registered nurse & activists"
+  ],
+  "organizations": [
+    "Capital News Service (CNS)",
+    "USCIS",
+    "Migration Policy Institute",
+    "CASA",
+    "University of Maryland Medical Center",
+    "Towson University",
+    "UMBC",
+    "Maryland Attorney General's Office",
+    "U.S. Congress",
+    "Trump Administration"
+  ],
+  "locations": [
+    "Maryland",
+    "College Park",
+    "Glen Burnie",
+    "Baltimore",
+    "Langley Park",
+    "Silver Spring",
+    "Montgomery County",
+    "Prince George's County",
+    "Baltimore County",
+    "Chile",
+    "Ivory Coast",
+    "Honduras"
+  ],
+  "topics": [
+    "DACA",
+    "immigration",
+    "dreamers",
+    "policy",
+    "community"
+  ],
+  "story_type": "feature",
+  "impact": 4
+}
+
+uv run python -m newspaper --url=https://cnsmaryland.org/2017/09/15/marylands-undocumented-immigrants-in-their-own-words/ -of=text | llm -m claude-4-sonnet "Extract structured metadata from this news story and return as JSON with these exact fields:
+{
+ \"url\": \"the url of the story\",
+ \"people\": [\"list of up to 3 people with their titles/roles\"],
+ \"organizations\": [\"government agencies, companies, groups mentioned\"], 
+ \"locations\": [\"cities, counties, states, specific places\"],
+ \"topics\": [\"3-5 topic tags, max 2 words each\"],
+ \"story_type\": \"breaking news, feature, analysis, investigation, other\",
+ \"impact\": \"a rating of the story's importance on a scale from 1 to 5, taking into account its impact on people\"
+}"
+
+LLM Answers -Claude 
+"people": [
+    "Nathaly Uribe Robledo - DACA recipient from Glen Burnie",
+    "Cindy Kolade - DACA recipient and clinical lab assistant",
+    "Jose Aguiluz - registered nurse from Silver Spring"
+  ],
+  "organizations": [
+    "Capital News Service",
+    "DACA",
+    "United States Citizenship and Immigration Services",
+    "University of Maryland Baltimore County",
+    "Migration Policy Institute",
+    "University of Maryland Medical Center",
+    "Towson University",
+    "CASA",
+    "Department of Homeland Security"
+  ],
+  "locations": [
+    "College Park",
+    "Maryland",
+    "Glen Burnie",
+    "Chile",
+    "Baltimore",
+    "Montgomery County",
+    "Prince George's County",
+    "Baltimore County",
+    "Ivory Coast",
+    "Silver Spring",
+    "Honduras",
+    "Langley Park"
+  ],
+  "topics": [
+    "DACA",
+    "Immigration",
+    "Undocumented immigrants",
+    "Dreamers",
+    "Trump administration"
+  ],
+  "story_type": "feature",
+  "impact": "4"
+}
+
+The LLM and I definitely collected similar metadata, however the places where we varied were certainly a trend. I definitely focused on the people who were quoted, or less known in the story, while the LLM named more big names/well known politicians. Alot of the orgs that the LLM provided were kind of useless or irrelevant, categorizing some things as Organizations they probably shouldn’t be. Same with locations. I also think that its categorization of both story type and human impact was pretty poor. It definitely was too sensitive when it came to human impact ( I don’t think that it graded something below a 3), and that it was pretty loose with its definitions of feature and breaking news (seemingly used them interchangeably). Semantically, there was some overlap. Human rights vs sexual misconduct, foreign affairs vs ukraine scandal, Environmental Policy vs Clean Water Act (Mine are the first, LLM the second) All of these are kind of saying the same thing. I think this difference stemmed from me understanding that the topics were potential tags for archival tagging, so I made the more broad and able to encompass more similar stories, and the LLm just honed into more specifics and ran with that as its topics. 
+
+There are numerous issues that we may run into if we attempt to scale this to more stories. The first one that I thought of was the cost of LLMS. In class you gave us the “don’t over use Claude because it is too expensive” spiel, and I imagine that doing this over and over again would be super expensive and not viable. If a lot of stories involve the same names (the same people or different people with the same name), then the model may get confused and mix them up. If we did this for 500 stories, it would be super difficult to check them all, and take a ton of time. 
+We could definitely make these results more consistent. If we were able to write some sort of code that would compare my answers to the LLMs and highlight differences or where there were some potential mistakes, it would be easier to compare. We could have also installed some rules for the LLM when collecting metadata. Instead of saying “name 3 people and their positions” we could have said “name the 3 most important people to this story, their positions and why they contributed to the story” This would have vastly improved the names that were recognized by the LLM.  I also think that this would be more effective if we sort of “trained” the LLM. We would have to collaborate on a story, gathering metadata from the story that we thought was the most important. Once this was complete, and we were confident that it was pretty close to the best metadata we could get, we would enter this into our LLM and say “this is kind of metadata that we want from this story, for the next stories, use our example metadata and complete the same task” 
