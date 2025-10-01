@@ -11,7 +11,6 @@ What we're going to do is explore those tags as data and then use GitHub Copilot
 1. In the Terminal, cd into the directory with your last name.
 2. Create a directory called cns_tag_browser using mkdir
 3. cd into that new directory
-4. Create a file called notes.md using touch. Keep that file open.
 5. Open that document and put "CNS Tag Browser" and today's date at the top, then save it
 5. Do NOT cd out of that directory
 
@@ -23,8 +22,7 @@ Now let's use sqlite-utils to get a better sense of the data. Try these commands
 
 ```bash
 # See tags with the most posts
-uv run sqlite-utils memory data/tags.json "SELECT name, count FROM tags ORDER BY count DESC LIMIT 10"
-
+cd
 # See tags that contain Trump
 uv run sqlite-utils memory data/tags.json "SELECT name, count FROM tags where name like '%Trump%' ORDER BY count DESC LIMIT 10"
 
