@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './index.css';
+import './custom-modern.css';
 
 const TAGS_JSON_PATH = "/workspaces/jour329w_fall2025/data/tags.json";
 
@@ -65,26 +66,24 @@ function App() {
     });
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
-      <header className="sticky top-0 z-20 bg-white shadow-md border-b border-gray-200 py-4 mb-8">
-        <div className="max-w-6xl mx-auto flex flex-col items-center">
-          <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-1">CNS Tag Browser</h1>
-          <span className="text-sm text-gray-600 font-medium">Capital News Service Data Viewer</span>
-        </div>
+    <div>
+      <header>
+        <h1>CNS Tag Browser</h1>
+        <span className="text-sm text-yellow-700 font-medium">Capital News Service Data Viewer</span>
       </header>
-      <main className="max-w-6xl mx-auto px-4">
+      <main className="main-content">
         <div className="flex flex-col md:flex-row gap-2 mb-4">
           <input
             type="text"
             placeholder="Search tags..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="border rounded px-3 py-2 flex-1"
+            className="search-bar"
           />
           <select
             value={sort}
             onChange={e => setSort(e.target.value)}
-            className="border rounded px-3 py-2"
+            className="sort-dropdown"
           >
             <option value="alpha">Alphabetical</option>
             <option value="count">By Frequency</option>
@@ -92,7 +91,7 @@ function App() {
           <select
             value={categoryFilter}
             onChange={e => setCategoryFilter(e.target.value)}
-            className="border rounded px-3 py-2"
+            className="sort-dropdown"
           >
             <option value="">All Categories</option>
             {categories.map(cat => (
@@ -100,43 +99,41 @@ function App() {
             ))}
           </select>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
           {filteredTags.map((tag) => {
             return (
               <div
                 key={tag.id}
-                className="border-2 border-yellow-400 bg-gradient-to-br from-blue-50 via-yellow-100 to-white rounded-xl shadow-lg p-5 flex flex-col gap-2 cursor-pointer hover:border-blue-500 hover:bg-yellow-50 transition-all duration-150"
+                className="tag-card cursor-pointer"
                 onClick={() => setSelectedTag(tag)}
               >
-                <div className="font-bold text-lg text-blue-800 mb-1">{tag.name}</div>
-                <div className="flex flex-col sm:flex-row gap-2 mb-2">
-                  <span className="inline-block px-2 py-1 rounded bg-yellow-300 text-yellow-900 text-xs font-semibold">{tag.category || 'Unknown'}</span>
-                  <span className="inline-block px-2 py-1 rounded bg-blue-200 text-blue-900 text-xs font-semibold">Posts: {tag.count}</span>
+                <div className="tag-title">{tag.name}</div>
+                <div className="tag-meta">
+                  <span className="tag-category">{tag.category || 'Unknown'}</span>
+                  <span className="tag-count">Posts: {tag.count}</span>
                 </div>
-                {Array.isArray(tag.links) && tag.links.length > 0 ? (
-                  <div className="flex flex-col gap-1 mt-2">
-                    {tag.links.map((link, i) => (
+                <div className="tag-links">
+                  {Array.isArray(tag.links) && tag.links.length > 0 ? (
+                    tag.links.map((link, i) => (
                       <a
                         key={i}
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 underline text-xs hover:text-yellow-700"
                       >
                         View Tag {i + 1}
                       </a>
-                    ))}
-                  </div>
-                ) : tag.link ? (
-                  <a
-                    href={tag.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline text-xs hover:text-yellow-700"
-                  >
-                    View Tag
-                  </a>
-                ) : null}
+                    ))
+                  ) : tag.link ? (
+                    <a
+                      href={tag.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Tag
+                    </a>
+                  ) : null}
+                </div>
               </div>
             );
           })}

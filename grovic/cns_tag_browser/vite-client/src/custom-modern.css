@@ -1,0 +1,115 @@
+/* custom-modern.css: Modern, clean, professional look for CNS Tag Browser */
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #222;
+  margin: 0;
+}
+
+header {
+  background: #fffbe6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-bottom: 1px solid #ffe066;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.tag-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid #e0e7ff;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.tag-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border-color: #6366f1;
+}
+
+.tag-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3730a3;
+  margin-bottom: 0.5rem;
+}
+
+.tag-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.tag-category {
+  background: #fef9c3;
+  color: #b45309;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.tag-count {
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tag-links {
+  margin-top: 0.75rem;
+}
+.tag-links a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.tag-links a:hover {
+  color: #b45309;
+}
+
+.search-bar, .sort-dropdown {
+  border-radius: 0.5rem;
+  border: 1px solid #e0e7ff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 350px;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    padding: 1rem 0.5rem;
+  }
+  .tag-card {
+    padding: 1rem;
+  }
+  .sidebar {
+    padding: 1rem 0.5rem;
+  }
+}
