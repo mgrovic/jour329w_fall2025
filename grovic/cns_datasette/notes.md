@@ -1,0 +1,12 @@
+Miles Grovic 10/01/2025
+
+What was the most interesting thing you saw doing this?
+Obviously embedding was the most interesting thing that I saw while using this. I didn’t fully grasp the concept of embedding until this assignment (even after that long video we had to watch with the British guy), but being able to have words broken down in number sequences and having others like sequenced words was so helpful. Even if the words weren't the same, the embedding still allowed for like-terms to be found. So helpful and so fascinating.  
+What was the most useful thing you saw doing this?
+I think that the faceting aspect of Datasette was probably the most interesting thing in the program itself. Being able to see all the unique values in a column was so huge, as you could see all the topics that come up, and then the stories within them. Makes it so much easier to become familiar with the data set. 
+How useful was Datasette for this kind of analysis?
+I think that datasete was pretty useful. I mean obviously it does a great job showing the data, and giving the user a hundred different ways to sort and dissect it. The best part is definitely the embeddings though. I honestly think that this is so much more beneficial than 
+What would you use this tool for in a newsroom?
+When searching large data sets, Datasette makes it super easy to break down and examine different categories, and find similar, like terms. For those that normally sift through large datasets by hand, Dattasette will simplify the process drastically. Using embeddings to find like terms makes it so much easier to build context, or find needles in a haystack. I think back to our reading where they used an LLM to find mistreatment in hospitals (average x ray reading time super low), and think that if we used Datasette, then finding those kinds of patterns would occur even more. 
+How does this compare to analyzing data in other tools?
+Compared to spreadsheets, Datasette is much more powerful for large datasets and its querying is much more straightforward. It requires so much less technical coding than R does, but you still have the ability to sort the data in similar ways. I honestly don’t know how embeddings work in spreadsheets or R, but if Datasette is the easiest to run them, it gives it a huge advantage over these othe
