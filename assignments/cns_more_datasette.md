@@ -14,6 +14,16 @@ What we're going to do is take your existing CNS work and enhance it with Datase
 6. Do cd .. twice to get back to the main directory (/workspaces/jour329w_fall2025)
 7. In the Terminal, do the git add, commit, pull and push your changes as described in the `setup.md` file.
 
+### Install Datasette and Plugins
+
+Install the tools we'll need:
+
+```bash
+# Install Datasette and the plugins we'll use
+uv add datasette sqlite-utils
+uv run datasette install datasette-enrichments-gpt datasette-codespaces datasette-embeddings
+```
+
 ### Use Your Existing Database
 
 For this assignment, we'll use the `cns.db` database you created in the `cns_datasette` assignment, which already contains all the CNS stories in a `stories` table.
@@ -33,6 +43,16 @@ rm cns.db
 uv run sqlite-utils insert cns.db stories ../../data/story_summaries.json
 ```
 
+### Configure Datasette Plugin
+
+Let's configure Datasette to use the OpenAI API key. In the Terminal, do the following:
+
+```bash
+touch metadata.json
+```
+
+Then copy the contents of this file into `metadata.json`: https://gist.githubusercontent.com/dwillis/419c9187b19e9b82775c3783dd5d8ff4/raw/7d51bde21e192f252e28fd6566976e310e2fd4b6/metadata.json
+
 ### Set Up OpenAI API Key
 
 The datasette-enrichments plugin uses OpenAI's API for AI analysis. You'll need to set up your API key:
@@ -50,27 +70,6 @@ echo $DATASETTE_SECRETS_OPENAI_API_KEY
 
 **Important**: Keep this API key secure and DO NOT commit it to your repository. The environment variable will only last for your current session.
 
-### Install Datasette and Plugins
-
-Install the tools we'll need:
-
-```bash
-# Install Datasette and the plugins we'll use
-uv add datasette sqlite-utils
-uv run datasette install datasette-enrichments-gpt datasette-codespaces datasette-embeddings
-
-# Verify installation
-uv run datasette --version
-```
-
-Let's configure Datasette to use the OpenAI API key. In the Terminal, do the following:
-
-```bash
-touch metadata.json
-```
-
-Then copy the contents of this file into `metadata.json`: https://gist.githubusercontent.com/dwillis/419c9187b19e9b82775c3783dd5d8ff4/raw/0186dd53b01ecce6e34a98dd242fae2f6892565a/metadata.json
-
 ### Exploring Datasette Enrichments
 
 Enrichments let you use AI to automatically analyze and enhance your data. Let's try several different types of analysis.
@@ -82,16 +81,7 @@ First, launch Datasette with your database.
 uv run datasette cns.db --metadata metadata.json
 ```
 
-When you run that, in the terminal you'll see something like this:
-
-```bash
-Running on GitHub Codespace: improved-zebra-5rw9ggwcj6w
-https://improved-zebra-5rw9ggwcj6w-8001.preview.app.github.dev/
-http://127.0.0.1:8001/-/auth-token?token=14a1df6a02959ca502d93c42e6183cd74b1f2c6a330b47bbe4837c54216135e2
-INFO:     Started server process [4297]
-```
-
-_This part is important_: you'll need to copy the portion of the second url that starts with "~/auth-token" to the end of the line, and then paste it onto the end of your Datasette web interface and hit Return. You'll know if you did it right by going to the stories table: there should be a gear icon right next to "stories".
+You'll know if it worked by going to the stories table: there should be a gear icon right next to "stories".
 
 #### Enrichment 1: Keywords or Sentiment
 
@@ -125,150 +115,29 @@ Run this enrichment and document in `notes.md`:
 
 ### Working with Embeddings
 
-Now let's explore semantic relationships using the embeddings plugin.
+Now let's explore semantic relationships using the embeddings plugin. We'll work with a smaller set of stories, which you'll load like this (and then run the server)
+
+```bash
+uv run sqlite-utils insert cns.db annapolis ../../data/annapolis.json --pk=link
+uv run datasette cns.db --metadata metadata.json --setting sql_time_limit_ms 35000
+```
 
 #### Generate Embeddings
 
-First, create embeddings for your stories:
+First, create embeddings for your stories. In the Datasette interface:
 
-```bash
-# Generate embeddings using the datasette-embeddings plugin
-# The plugin will use your OPENAI_API_KEY environment variable
-DATASETTE_SECRETS_OPENAI_API_KEY=$DATASETTE_SECRETS_OPENAI_API_KEY uv run datasette cns.db
-```
+1. Go to the annapolis table. There should be 87 stories.
+2. Click on the gear icon and choose "Enrich selected data"
+3. Click on "Text embeddings with OpenAI"
+4. On the next page, remove all but {{ summary }} from the Template box
+5. Click the "Enrich data" button.
 
-In the Datasette interface:
+When it's done, you can click on the gear icon again and choose "Semantic search against this table". Try a few phrases - remember, you want to search the concept, not specific keywords.
 
-1. Navigate to the stories table
-2. Look for "Embeddings" functionality 
-3. Generate embeddings for the content column (or title + content combined)
-4. Choose an appropriate embedding model (like sentence-transformers/all-MiniLM-L6-v2)
-
-#### Explore Semantic Similarity
-
-Once embeddings are generated:
-
-1. **Find similar stories**: Click on any story and use "Find similar" to discover related coverage
-2. **Search by concept**: Try searching for concepts like "budget crisis" or "environmental protection"
-3. **Cluster analysis**: Look for stories that cluster together thematically
-
-Document your findings:
-
-```bash
-# Try these similarity searches in Datasette
-# Search for stories similar to budget-related content
-# Search for environment/pollution related stories  
-# Search for political/election content
-```
-
-In `notes.md`, create sections for:
-- **Unexpected Connections**: Stories that seemed unrelated but were found to be similar
-- **Topic Clusters**: Groups of stories that naturally cluster together
-- **Coverage Gaps**: Topics that seem underrepresented when you search for them
-
-### Advanced Enrichments
-
-Now let's try some custom enrichments that are particularly useful for journalism:
-
-#### Source Diversity Analysis
-
-Create an enrichment to analyze source diversity:
-
-1. Extract quoted sources from story content
-2. Classify sources by type (official, expert, citizen, etc.)
-3. Analyze gender representation if names are provided
-4. Look at geographic diversity of sources
-
-#### Story Impact Scoring
-
-Design an enrichment to assess potential story impact:
-
-1. Analyze language for urgency indicators
-2. Identify policy implications
-3. Assess local vs. statewide relevance  
-4. Look for follow-up potential
-
-#### Fact-Checking Flags
-
-Create an enrichment that identifies claims that might need fact-checking:
-
-1. Identify statistical claims
-2. Flag controversial topics
-3. Highlight claims about government spending or policy
-4. Mark statements that could benefit from verification
-
-Document your custom enrichment ideas in `notes.md` even if you can't fully implement them.
-
-### Data Quality and Ethics
-
-As you experiment with AI enrichments, consider:
-
-**Accuracy Questions:**
-- How often do the AI classifications seem wrong?
-- What types of errors do you notice?
-- Which enrichments seem most/least reliable?
-
-**Bias Considerations:**
-- Do sentiment analysis results seem fair across different topics?
-- Are there patterns in entity extraction that might reflect bias?
-- How might these tools affect editorial decisions?
-
-**Practical Applications:**
-- Which enrichments would genuinely help a newsroom?
-- What workflows would benefit from automated analysis?
-- Where is human judgment still essential?
-
-Write a reflection section addressing these questions.
-
-### Comparative Analysis
-
-Use your enrichments and embeddings to conduct some comparative analysis:
-
-#### Geographic Coverage Patterns
-
-```bash
-# Analyze which Maryland regions get the most coverage
-# Look for stories that mention specific counties/cities
-# Use embeddings to find geographically-related story clusters
-```
-
-#### Institutional Coverage
-
-```bash
-# Identify which government agencies appear most frequently
-# Find stories about similar institutions using embeddings
-# Track how different institutions are portrayed
-```
-
-#### Temporal Patterns
-
-```bash
-# Look at how topics change over time in your dataset
-# Use embeddings to track evolving coverage of long-running stories
-# Identify seasonal patterns in coverage
-```
-
-### Building a Newsroom Dashboard
-
-Design (even if you don't build) a Datasette-powered dashboard for a newsroom using enrichments and embeddings:
-
-1. **Story Similarity Alerts**: Automatically flag when new stories are similar to recent coverage
-2. **Source Diversity Monitoring**: Track diversity metrics across coverage
-3. **Topic Gap Analysis**: Identify undercover topics in your beat
-4. **Fact-Check Queue**: Automatically flag stories with claims needing verification
-5. **Impact Prediction**: Highlight stories likely to generate significant reader interest
-
-Sketch out this dashboard concept in your `notes.md`.
-
-### Reflection and Next Steps
-
-Conclude your `notes.md` with reflection on:
-
-- **Most Useful Features**: Which enrichments provided the most valuable insights?
-- **Accuracy Assessment**: How reliable were the AI analyses?
-- **Workflow Integration**: How could these tools fit into actual newsroom workflows?
-- **Ethical Considerations**: What concerns arose about AI-assisted journalism?
-- **Future Applications**: What other enrichments would you want to try?
+Document your searches in `notes.md`:
+- What words or phrases did you try?
+- Do the results make sense?
+- Anything you don't like about this?
 
 ### Submission
 
@@ -281,20 +150,4 @@ git pull origin main
 git push origin main
 ```
 
-Submit the link to your analysis directory in ELMS. Your directory should contain:
-- `notes.md` with your complete analysis and reflections  
-- `cns.db` with your enriched data
-- Screenshots of interesting findings from Datasette
-- Any custom scripts you created
-
-### Extra Credit
-
-Want to go further? Try these advanced challenges:
-
-- **Custom Embedding Models**: Experiment with different embedding models and compare results
-- **Cross-Dataset Analysis**: Compare CNS coverage patterns with national news trends
-- **Automated Alerts**: Create a system that alerts when stories match specific criteria
-- **Network Analysis**: Use embeddings to create visualizations of story relationships
-- **Temporal Embedding Analysis**: Track how story themes evolve over time using embeddings
-
-Remember: The goal is to understand how AI can augment journalism while being critical about its limitations. Focus on practical applications that would genuinely help reporters and editors do better work.
+Submit the link to your `notes.md` file in ELMS.
