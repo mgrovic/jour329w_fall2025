@@ -28,6 +28,7 @@ Before making changes, you need to understand what CNS actually covers:
 - Look through recent stories (from the last year or two)
 - Pay attention to:
   - What types of stories appear most frequently?
+  Just in recent days
   - What Maryland-specific topics come up repeatedly?
   - Are there coverage areas that seem over-represented in the topic list?
   - Are there coverage areas that seem under-represented?
