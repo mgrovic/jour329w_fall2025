@@ -1,6 +1,38 @@
 # CNS Collections
 
-Beat reporting is the backbone of journalism - reporters who specialize in covering specific topics, institutions, or geographic areas over time. Capital News Service has covered many beats over the years, from Maryland state politics to environmental issues to local government.
+Beat reporting is the backbone of journalism - reporters who specialize in covering specific topics, institutions, or geographic areas over time. Capital News Service has c    # Process each story
+    enhanced_stories = []
+    for i, story in enumerate(stories):
+        print(f"Processing {i+1}/{len(stories)}: {story['title']}")
+        
+        metadata = extract_metadata(story['title'], story['summary'], schema_prompt, args.model)
+        
+        # Add metadata fields as separate columns instead of nested object
+        enhanced_story = story.copy()
+        
+        # If metadata extraction was successful, add each field separately
+        if 'error' not in metadata:
+            # Add each metadata field as a top-level column
+            for key, value in metadata.items():
+                # Convert arrays to JSON strings for storage
+                if isinstance(value, list):
+                    enhanced_story[f'metadata_{key}'] = json.dumps(value)
+                else:
+                    enhanced_story[f'metadata_{key}'] = value
+        else:
+            # If there was an error, add error information
+            enhanced_story['metadata_error'] = metadata.get('error', 'Unknown error')
+            
+        enhanced_stories.append(enhanced_story)
+        
+        # Be respectful to the API
+        time.sleep(1)
+
+    # Save the enhanced collection
+    with open('enhanced_beat_stories.json', 'w') as f:
+        json.dump(enhanced_stories, f, indent=2)
+
+    print(f"Processed {len(enhanced_stories)} stories with metadata")er the years, from Maryland state politics to environmental issues to local government.
 
 ### Getting Started
 
@@ -32,12 +64,12 @@ First, you need to pick a topic to focus on. Let's look at the available topics:
 
 ```bash
 # See the available topic categories
-cat data/topics.csv
+cat data/new_topics.csv
 ```
 
 ### Find Your Stories
 
-Now you need to identify and collect stories from your chosen beat using the `story_summaries.json` file. Each story in this file has a `topic` field that corresponds to one of the topics from `topics.csv`.
+Now you need to identify and collect stories from your chosen beat using the `story_summaries.json` file. Each story in this file has a `topic` field that corresponds to one of the topics from `new_topics.csv`.
 
 First, let's see what topics are available and how many stories are in each:
 
@@ -97,7 +129,7 @@ Document in `notes.md`:
 
 ### Design Your Metadata Schema
 
-Since the `story_summaries.json` file already had AI-generated summaries, you'll enhance these stories with beat-specific metadata. Design a consistent schema that will help you understand your beat's ecosystem:
+Since the `story_summaries.json` file already had AI-generated summaries, you'll enhance your chosen topic stories with beat-specific metadata. Design a consistent schema that will help you understand your beat's ecosystem:
 
 **Required Fields (all beats should have these):**
 - **people**: Array of key people mentioned (names only)
@@ -120,9 +152,11 @@ And paste the following in it:
 import json
 import subprocess
 import time
+import argparse
+import sys
 from pathlib import Path
 
-def extract_metadata(story_title, story_content, schema_prompt):
+def extract_metadata(story_title, story_content, schema_prompt, model):
     """Use LLM to extract structured metadata from story title and summary."""
     prompt = f"""
 Extract metadata from this news story in JSON format using only the title and summary provided.
@@ -138,7 +172,7 @@ Return only valid JSON with the metadata. If information is not available, use a
     
     try:
         result = subprocess.run([
-            'llm', '-m', 'groq/qwen/qwen3-32b', prompt
+            'llm', '-m', model, prompt
         ], capture_output=True, text=True, timeout=30)
         
         if result.returncode == 0:
@@ -156,46 +190,97 @@ Return only valid JSON with the metadata. If information is not available, use a
     except Exception as e:
         return {"error": str(e)}
 
-# Load your beat stories - UPDATE THE FILENAME to match your topic!
-# Example: 'story_summaries_environment.json' or 'story_summaries_government_politics.json'
-with open('story_summaries_environment.json') as f:  # CHANGE THIS FILENAME
-    stories = json.load(f)
-
-# Define your schema prompt based on your beat - CUSTOMIZE THIS!
-schema_prompt = """
-{
-  "people": ["Person Name 1", "Person Name 2"],
-  "geographic_focus": "Baltimore City",
-  "key_institutions": ["Maryland General Assembly", "Department of Environment"],
-  "beat_specific_field": "value"
-}
-"""
-
-# Process each story
-enhanced_stories = []
-for i, story in enumerate(stories):
-    print(f"Processing {i+1}/{len(stories)}: {story['title']}")
+def main():
+    parser = argparse.ArgumentParser(description='Add metadata to CNS beat stories using LLM')
+    parser.add_argument('--model', required=True, help='LLM model to use (e.g., gpt-4o-mini, claude-3.5-haiku)')
+    parser.add_argument('--input', default='story_summaries_elections.json', help='Input JSON file with stories')
     
-    metadata = extract_metadata(story['title'], story['summary'], schema_prompt)
+    # Show help if no arguments provided
+    if len(sys.argv) == 1:
+        parser.print_help()
+        return
     
-    # Add metadata to story
-    enhanced_story = story.copy()
-    enhanced_story['metadata'] = metadata
-    enhanced_stories.append(enhanced_story)
+    args = parser.parse_args()
     
-    # Be respectful to the API
-    time.sleep(1)
+    # Load your beat stories
+    try:
+        with open(args.input) as f:
+            stories = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: Could not find input file '{args.input}'")
+        print("Make sure to update the --input parameter to match your topic file!")
+        return
 
-# Save the enhanced collection
-with open('enhanced_beat_stories.json', 'w') as f:
-    json.dump(enhanced_stories, f, indent=2)
+    # Define your schema prompt based on your beat - CUSTOMIZE THIS!
+    schema_prompt = """
+    {
+      "people": ["Person Name 1", "Person Name 2"],
+      "geographic_focus": "Baltimore City",
+      "key_institutions": ["Maryland General Assembly", "Department of Environment"],
+      "beat_specific_field": "value"
+    }
+    """
 
-print(f"Processed {len(enhanced_stories)} stories with metadata")
+    # Process each story
+    enhanced_stories = []
+    for i, story in enumerate(stories):
+        print(f"Processing {i+1}/{len(stories)}: {story['title']}")
+        
+        metadata = extract_metadata(story['title'], story['content'], schema_prompt, args.model)
+    # Process each story
+    enhanced_stories = []
+    for i, story in enumerate(stories):
+        print(f"Processing {i+1}/{len(stories)}: {story['title']}")
+        
+        metadata = extract_metadata(story['title'], story['summary'], schema_prompt, args.model)
+        
+        # Add metadata fields as separate columns instead of nested object
+        enhanced_story = story.copy()
+        
+        # If metadata extraction was successful, add each field separately
+        if 'error' not in metadata:
+            # Add each metadata field as a top-level column
+            for key, value in metadata.items():
+                # Convert arrays to JSON strings for storage
+                if isinstance(value, list):
+                    enhanced_story[f'metadata_{key}'] = json.dumps(value)
+                else:
+                    enhanced_story[f'metadata_{key}'] = value
+        else:
+            # If there was an error, add error information
+            enhanced_story['metadata_error'] = metadata.get('error', 'Unknown error')
+            
+        enhanced_stories.append(enhanced_story)
+        
+        # Be respectful to the API
+        time.sleep(1)
+
+    # Save the enhanced collection
+    with open('enhanced_beat_stories.json', 'w') as f:
+        json.dump(enhanced_stories, f, indent=2)
+
+    print(f"Processed {len(enhanced_stories)} stories with metadata")
+
+if __name__ == "__main__":
+    main()
 ```
 
 **Important**: Customize the `schema_prompt` variable for your specific beat before running the script. Choose the beat-specific fields that make sense for your topic.
 
-Run the script and document any issues in `notes.md`. 
+Run the script with the required arguments:
+
+```bash
+# Example usage - replace with your actual input file and preferred model
+uv run python add_metadata.py --model gpt-4o-mini --input story_summaries_housing.json
+
+# Or use Claude (if you have the API key set)
+uv run python add_metadata.py --model claude-3.5-haiku --input story_summaries_housing.json
+
+# Run without arguments to see help
+uv run python add_metadata.py
+```
+
+Document any issues in `notes.md`. 
 
 ### Load into SQLite Database
 
@@ -205,10 +290,11 @@ Use sqlite-utils to create a database from your enhanced collection:
 # Create database and import your stories
 uv run sqlite-utils insert beat_stories.db stories enhanced_beat_stories.json --pk link
 
-# Extract metadata arrays into separate tables for easier querying
-uv run sqlite-utils extract beat_stories.db stories "metadata.people" --table people --fk story_link
-uv run sqlite-utils extract beat_stories.db stories "metadata.key_institutions" --table institutions --fk story_link
-
+# Now the metadata fields are stored as separate columns:
+# - metadata_people (JSON array as text)
+# - metadata_geographic_focus (text)
+# - metadata_key_institutions (JSON array as text)
+# - metadata_beat_specific_field (varies by topic)
 ```
 
 Now you can run browse the data using Datasette
@@ -218,6 +304,42 @@ First, install datasette:
 ```bash
 uv add datasette
 uv run datasette beat_stories.db
+```
+
+Datasette will open in your browser. You can query the metadata columns directly. Here are some useful queries:
+
+**Find all unique people mentioned:**
+```sql
+SELECT DISTINCT json_extract(value, '$') as person_name
+FROM stories, json_each(metadata_people)
+WHERE json_extract(value, '$') != ''
+ORDER BY person_name;
+```
+
+**Count stories by geographic focus:**
+```sql
+SELECT metadata_geographic_focus as location, 
+       COUNT(*) as story_count
+FROM stories
+WHERE metadata_geographic_focus IS NOT NULL
+GROUP BY location
+ORDER BY story_count DESC;
+```
+
+**Find all unique institutions:**
+```sql
+SELECT DISTINCT json_extract(value, '$') as institution
+FROM stories, json_each(metadata_key_institutions)
+WHERE json_extract(value, '$') != ''
+ORDER BY institution;
+```
+
+**Find stories that mention specific people:**
+```sql
+SELECT title, summary, metadata_people
+FROM stories
+WHERE metadata_people LIKE '%Person Name%'
+ORDER BY title;
 ```
 
 ### Analysis and Insights
