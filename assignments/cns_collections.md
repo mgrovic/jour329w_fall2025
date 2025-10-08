@@ -4,7 +4,7 @@ Beat reporting is the backbone of journalism - reporters who specialize in cover
 
 ### Getting Started
 
-What we're going to do is create a collection of stories from a specific beat, add structured metadata, and use AI embeddings to understand the patterns and relationships within that coverage. This will help you see how beat reporting should create a network of stories, sources, and themes.
+What we're going to do is create a collection of stories from a specific beat, add structured metadata, and try to better understand the patterns and relationships within that coverage. This will help you see how beat reporting should create a network of stories, sources, and themes. Finally, we'll create a prototype beat book!
 
 1. In the Terminal, cd into the directory with your last name.
 2. Create a directory called cns_collections using mkdir
