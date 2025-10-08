@@ -1,38 +1,6 @@
 # CNS Collections
 
-Beat reporting is the backbone of journalism - reporters who specialize in covering specific topics, institutions, or geographic areas over time. Capital News Service has c    # Process each story
-    enhanced_stories = []
-    for i, story in enumerate(stories):
-        print(f"Processing {i+1}/{len(stories)}: {story['title']}")
-        
-        metadata = extract_metadata(story['title'], story['summary'], schema_prompt, args.model)
-        
-        # Add metadata fields as separate columns instead of nested object
-        enhanced_story = story.copy()
-        
-        # If metadata extraction was successful, add each field separately
-        if 'error' not in metadata:
-            # Add each metadata field as a top-level column
-            for key, value in metadata.items():
-                # Convert arrays to JSON strings for storage
-                if isinstance(value, list):
-                    enhanced_story[f'metadata_{key}'] = json.dumps(value)
-                else:
-                    enhanced_story[f'metadata_{key}'] = value
-        else:
-            # If there was an error, add error information
-            enhanced_story['metadata_error'] = metadata.get('error', 'Unknown error')
-            
-        enhanced_stories.append(enhanced_story)
-        
-        # Be respectful to the API
-        time.sleep(1)
-
-    # Save the enhanced collection
-    with open('enhanced_beat_stories.json', 'w') as f:
-        json.dump(enhanced_stories, f, indent=2)
-
-    print(f"Processed {len(enhanced_stories)} stories with metadata")er the years, from Maryland state politics to environmental issues to local government.
+Beat reporting is the backbone of journalism - reporters who specialize in covering specific topics, institutions, or geographic areas over time. Capital News Service has covered many beats over the years, from Maryland state politics to environmental issues to local government.
 
 ### Getting Started
 
@@ -43,8 +11,6 @@ What we're going to do is create a collection of stories from a specific beat, a
 3. cd into that new directory
 4. Create a file called notes.md using touch. Keep that file open.
 5. Open that document and put "CNS Collections - [Your Beat Name]" and today's date at the top, then save it
-6. Do cd .. twice to get back to the main directory (/workspaces/jour329w_fall2025)
-7. In the Terminal, do the git add, commit, pull and push your changes as described in the `setup.md` file.
 
 ### Setup
 
@@ -64,7 +30,7 @@ First, you need to pick a topic to focus on. Let's look at the available topics:
 
 ```bash
 # See the available topic categories
-cat data/new_topics.csv
+cat ../../data/new_topics.csv
 ```
 
 ### Find Your Stories
@@ -75,7 +41,7 @@ First, let's see what topics are available and how many stories are in each:
 
 ```bash
 # Count stories by topic
-uv run sqlite-utils memory data/story_summaries.json \
+uv run sqlite-utils memory ../../data/story_summaries.json \
   "SELECT topic, COUNT(*) as story_count 
    FROM story_summaries 
    GROUP BY topic 
@@ -87,7 +53,7 @@ Choose a topic from the list that has a good number of stories (aim for at least
 ```bash
 # Save all stories for your chosen topic
 # Replace 'Elections' with your actual topic name as it appears in the data
-uv run sqlite-utils memory data/story_summaries.json \
+uv run sqlite-utils memory ../../data/story_summaries.json \
   "SELECT * FROM story_summaries 
    WHERE topic = 'Elections'" \
   --json-cols > story_summaries_elections.json
@@ -97,19 +63,19 @@ uv run sqlite-utils memory data/story_summaries.json \
 
 ```bash
 # For Maryland Government & Politics:
-uv run sqlite-utils memory data/story_summaries.json \
+uv run sqlite-utils memory ../../data/story_summaries.json \
   "SELECT * FROM story_summaries 
    WHERE topic = 'Maryland Government & Politics'" \
   --json-cols > story_summaries_maryland_government_politics.json
 
 # For Education:
-uv run sqlite-utils memory data/story_summaries.json \
+uv run sqlite-utils memory ../../data/story_summaries.json \
   "SELECT * FROM story_summaries 
    WHERE topic = 'Education'" \
   --json-cols > story_summaries_education.json
 
 # For Baltimore:
-uv run sqlite-utils memory data/story_summaries.json \
+uv run sqlite-utils memory ../../data/story_summaries.json \
   "SELECT * FROM story_summaries 
    WHERE topic = 'Baltimore'" \
   --json-cols > story_summaries_baltimore.json
@@ -265,7 +231,7 @@ if __name__ == "__main__":
     main()
 ```
 
-**Important**: Customize the `schema_prompt` variable for your specific beat before running the script. Choose the beat-specific fields that make sense for your topic.
+**Important**: Customize the `schema_prompt` variable for your specific beat before running the script. Choose the beat-specific fields that make sense for your topic. And you'll need to pick your model. You can choose any model you have access to, but generally it should be one you've used before. You can run `uv run llm models` to see which ones you have access to.
 
 Run the script with the required arguments:
 
@@ -306,60 +272,33 @@ uv add datasette
 uv run datasette beat_stories.db
 ```
 
-Datasette will open in your browser. You can query the metadata columns directly. Here are some useful queries:
-
-**Find all unique people mentioned:**
-```sql
-SELECT DISTINCT json_extract(value, '$') as person_name
-FROM stories, json_each(metadata_people)
-WHERE json_extract(value, '$') != ''
-ORDER BY person_name;
-```
-
-**Count stories by geographic focus:**
-```sql
-SELECT metadata_geographic_focus as location, 
-       COUNT(*) as story_count
-FROM stories
-WHERE metadata_geographic_focus IS NOT NULL
-GROUP BY location
-ORDER BY story_count DESC;
-```
-
-**Find all unique institutions:**
-```sql
-SELECT DISTINCT json_extract(value, '$') as institution
-FROM stories, json_each(metadata_key_institutions)
-WHERE json_extract(value, '$') != ''
-ORDER BY institution;
-```
-
-**Find stories that mention specific people:**
-```sql
-SELECT title, summary, metadata_people
-FROM stories
-WHERE metadata_people LIKE '%Person Name%'
-ORDER BY title;
-```
-
 ### Analysis and Insights
 
-Using facets and filters, explore patterns in your beat:
+Using facets and filters, explore patterns in your beat (you should facet by array for metadata or tags):
 
-1. **Key Players**: Who appears most frequently? What roles do they play?
+1. **Key Players**: Who appears most frequently?
 
 2. **Geographic Patterns**: Which areas get the most coverage?
 
 3. **Institutional Network**: Which organizations appear in stories?
 
-Do these findings make sense? Document your findings in `notes.md`
+Do these findings make sense? Document your findings in `notes.md`. What changes would you make to the `add_metadata.py` script to refine the metadata output?
 
-### Reflection
+### Make a Prototype Beat Book
+
+Take your `enhanced_beat_stories.json` file and `notes.md` evaluation and create a prompt that produces a guide for a reporter assigned to cover stories on that topic. Put that prompt in a file called `prompt.txt`. You can be as detailed as you like in the prompt, and you can revise and re-run it. You will choose the model and replace "REPLACE WITH YOUR MODEL" below with it and then run the command.
+
+```bash
+cat prompt.txt enhanced_beat_stories.json | uv run llm -m REPLACE WITH YOUR MODEL > prototype.md
+```
+
+### Evaluation
 
 Conclude your `notes.md` with reflection on:
 
 - What did the structured metadata reveal about this beat?
-- How could this approach help a beat reporter?
+- Does your `prototype.md` result seem useful? What does it do well and what does it not do well?
+- Did you change your prompt, and if so, how? Did that work better?
 - What would you do differently with more time or data?
 
 ### Submission
