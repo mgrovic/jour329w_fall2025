@@ -1,89 +1,110 @@
-# Chesapeake Bay Beat Reporter's Guide
+Prompt: 
+You are an experienced newsroom editor helping a new reporter understand how to cover a specific beat.
+
+Using these two reference files:
+1. `enhanced_beat_stories.json` that contains stories, summaries, and metadata fields such as people, geography, key institutions, and environmental issues.
+2. `notes.md` — includes an evaluation of the metadata
+
+Using both of these, produce a Reporter’s Beat Book that will help a new reporter filling a role as a journalist quickly understand:
+- The most important aspects that the beat covers and why it matters in general 
+- Key people, institutions, and locations to know, with brief context for each.
+- The most common themes or story types that appear on this beat
+- Any ongoing or emerging issues to watch
+
+Format the output as a readable newsroom memo:
+- Use headings and subheadings.
+- Include bullet points or short tables where appropriate.
+- Keep paragraphs short and actionable.
+- Focus on helping a reporter quickly understand the beat and report confidently.
+
+
+Structure the output as a clear, readable newsroom memo with headings, bullet points, and short paragraphs.
+Keep it practical and focused on helping a real journalist prepare to report confidently.
+
+
+
+# Reporter's Beat Book: Chesapeake Bay Environmental Reporting
 
 ## Overview of the Beat
-The Chesapeake Bay beat covers one of the most critical environmental and economic ecosystems in the United States, focusing on water quality, wildlife restoration, conservation efforts, and the complex interactions between environmental policy, local industries, and community stakeholders.
 
-## Key Themes and Story Types
-1. Water Quality and Pollution
-- Tracking nitrogen, phosphorus, and sediment levels
-- Monitoring wastewater treatment plant performance
-- Examining agricultural and urban runoff impacts
-- Analyzing EPA restoration targets and progress
+### Why the Chesapeake Bay Matters
+The Chesapeake Bay is America's largest estuary and a critical environmental, economic, and cultural resource for Maryland and surrounding states. This beat covers:
+- Environmental restoration efforts
+- Water quality and pollution challenges
+- Wildlife and habitat conservation
+- Economic impacts of bay health
+- Policy and funding for conservation
 
-2. Wildlife and Habitat Restoration
-- Oyster population recovery efforts
-- Blue crab population monitoring
-- Underwater grass restoration
-- Invasive species management
+### Significance
+- Supports 3,600+ species of plants and animals
+- Economic value estimated at $107.2 billion annually
+- Drinking water source for 18 million people
+- Key industries: fishing, tourism, agriculture
 
-3. Economic and Community Impacts
-- Seafood industry (crabbing, fishing, oystering)
-- Tourism and recreational activities
-- Impact of environmental changes on local livelihoods
-- Conservation program funding and economic implications
+## Key People and Institutions
 
-## Most Important Stakeholders
-### Institutions
+### Key People
+- Sen. Chris Van Hollen (Maryland)
+- Sen. Ben Cardin (Maryland)
+- Gov. Wes Moore
+- Theaux Le Gardeur (Gunpowder Riverkeeper)
+- Alice Volpitta (Blue Water Baltimore)
+
+### Key Institutions
 - Environmental Protection Agency (EPA)
 - Chesapeake Bay Foundation
-- Maryland Department of Natural Resources
-- NOAA Chesapeake Bay Office
+- National Oceanic and Atmospheric Administration (NOAA)
 - Choose Clean Water Coalition
-
-### Key People/Advocates
-- Chris Van Hollen (Senator)
-- Ben Cardin (Senator)
-- Wes Moore (Governor)
-- Joel Dunn (Chesapeake Conservancy)
-- Local watermen and farmers
-
-## Geographic Focus
-- Maryland (primary)
-- Surrounding states: Virginia, Pennsylvania, Delaware
-- Specific regions: Eastern Shore, Southern Maryland
-- Key waterways: Chesapeake Bay, Potomac River, Susquehanna River
-
-## Emerging and Ongoing Issues
-1. Climate Change Impacts
-- Rising sea levels
-- Changes in water temperature
-- Shifts in wildlife populations
-- Increasing frequency of extreme weather events
-
-2. Funding and Policy Challenges
-- Potential federal funding cuts
-- Variability in state-level conservation commitments
-- Balancing environmental restoration with economic development
-
-3. Restoration Milestones
-- 2025 pollution reduction targets
-- Oyster population recovery goals
-- Underwater grass restoration efforts
-
-## Reporting Approach
-- Follow scientific data and environmental metrics
-- Balance environmental and economic perspectives
-- Highlight community voices and local impacts
-- Investigate policy implementation and effectiveness
-- Track long-term trends and progress
-
-## Data Sources
-- EPA Chesapeake Bay Program reports
 - Maryland Department of Natural Resources
-- University of Maryland Center for Environmental Science
-- NOAA monitoring data
-- Local environmental non-profits
 
-## Story Ideas
-- Annual "State of the Bay" comprehensive report
-- Profiles of local watermen and their changing industry
-- Deep dives into specific restoration projects
-- Investigative pieces on pollution sources
-- Economic impact analyses of environmental policies
+## Major Ongoing Issues
 
-## Tips for New Reporters
-- Develop relationships with scientists and local environmental groups
-- Learn to interpret complex environmental data
-- Understand the interconnected nature of the ecosystem
-- Stay patient and focus on long-term narrative
-- Always seek multiple perspectives
+### Water Quality and Pollution
+- Nitrogen and phosphorus runoff from agriculture
+- Sewage and stormwater contamination
+- Efforts to meet 2025 pollution reduction targets
+
+### Habitat Restoration
+- Oyster population recovery
+- Underwater grass preservation
+- Invasive species management
+
+### Climate Change Impacts
+- Rising sea levels
+- Changing water temperatures
+- Increased frequency of extreme weather events
+
+## Common Story Types
+
+1. Conservation Progress Reports
+   - Annual bay health assessments
+   - Restoration milestone tracking
+
+2. Policy and Funding Stories
+   - Federal and state funding for bay programs
+   - Legislative efforts to protect the bay
+
+3. Community and Economic Impact
+   - Effects on fishing and tourism industries
+   - Local conservation initiatives
+
+## Emerging Trends to Watch
+
+- Increasing emphasis on climate resilience
+- Technology-driven monitoring (e.g., 360-degree river mapping)
+- Growing community engagement in conservation
+- Challenges from invasive species
+- Impact of development on water quality
+
+## Reporting Tips
+
+- Always contextualize environmental data
+- Highlight human stories and local perspectives
+- Track long-term trends, not just short-term events
+- Understand complex interconnections between ecology, economy, and policy
+
+## Key Resources
+- Chesapeake Bay Program website
+- Maryland Department of Natural Resources
+- EPA Chesapeake Bay Program
+- Chesapeake Bay Foundation annual reports

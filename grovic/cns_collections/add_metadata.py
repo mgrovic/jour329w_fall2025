@@ -64,17 +64,21 @@ def main():
     
     schema_prompt = """
 - Do NOT include "Chesapeake Bay" in the metadata_geographic_focus column.
-- Use specific places instead — e.g., "Annapolis", "Baltimore", "Eastern Shore", "Gunpowder Falls", "Southern Maryland", etc.
+- Use specific places instead e.g., "Annapolis", "Baltimore", "Eastern Shore", "Gunpowder Falls", "Southern Maryland", etc.
 - If unclear, use "Maryland (unspecified)".
-- In "people", list all individuals mentioned by name, including scientists, activists, politicians, and local residents.
+- In "people", list **every individual mentioned by name**, including scientists, activists, politicians, and local residents.
+- Names may appear anywhere in the text, not just at the start of a sentence.
+- Include them all, even if they are repeated. Do not miss anyone.
+- If you are reasonably sure a name refers to a real person, include it. Do not leave the "people" array empty if names are mentioned.
+
 - Do not include organizations because those go under "key_institutions".
 Schema:
 {
 
-  "people": ["Donald Trump", "Ben Cardin"],
+  "people": ["Donald Trump", "Ben Cardin", "Tina Cardosi", "Andrew Barnet"],
   "geographic_focus": ["Annapolis", "Gunpowder Falls"],
   "key_institutions": ["EPA", "NOAA"],
-  environmental_issues_list = [
+  "environmental_issues": [
     "Water pollution",
     "Air pollution",
     "Habitat loss",
@@ -85,7 +89,6 @@ Schema:
     "Overfishing",
     "Wetland destruction",
     "Other" ]
-]
 }
     """
 
