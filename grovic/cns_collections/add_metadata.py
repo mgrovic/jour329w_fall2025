@@ -61,20 +61,35 @@ def main():
         return
 
     # Define your schema prompt based on your beat - CUSTOMIZE THIS!
+    
     schema_prompt = """
-    {
-      "people": ["Donald Trump", "Ben Cardin"],
-      "geographic_focus": ["Annapolis", "Gun Powder Falls"]
-      "key_institutions": ["EPA", "NOAA"],
-      "environmental_issue: ["Water quality", "habitat restoration", "pollution", "fisheries", "policy"]
+- Do NOT include "Chesapeake Bay" in the metadata_geographic_focus column.
+- Use specific places instead — e.g., "Annapolis", "Baltimore", "Eastern Shore", "Gunpowder Falls", "Southern Maryland", etc.
+- If unclear, use "Maryland (unspecified)".
+- In "people", list all individuals mentioned by name, including scientists, activists, politicians, and local residents.
+- Do not include organizations because those go under "key_institutions".
+Schema:
+{
+
+  "people": ["Donald Trump", "Ben Cardin"],
+  "geographic_focus": ["Annapolis", "Gunpowder Falls"],
+  "key_institutions": ["EPA", "NOAA"],
+  environmental_issues_list = [
+    "Water pollution",
+    "Air pollution",
+    "Habitat loss",
+    "Erosion",
+    "Climate change",
+    "Waste management",
+    "Deforestation",
+    "Overfishing",
+    "Wetland destruction",
+    "Other" ]
+]
+}
     """
 
-    # Process each story
-    enhanced_stories = []
-    for i, story in enumerate(stories):
-        print(f"Processing {i+1}/{len(stories)}: {story['title']}")
-        
-        metadata = extract_metadata(story['title'], story['content'], schema_prompt, args.model)
+    
     # Process each story
     enhanced_stories = []
     for i, story in enumerate(stories):

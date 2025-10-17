@@ -1,0 +1,15 @@
+You are an experienced newsroom editor helping a new reporter understand how to cover a specific beat.
+
+Using these two reference files:
+1. `enhanced_beat_stories.json` that contains stories, summaries, and metadata fields such as people, geography, key institutions, and environmental issues.
+2. `notes.md` includes an evaluation of the data.
+
+Using both of these, produce a Reporter’s Beat Book that will help a new reporter filling a role as an editor quickly understand:
+- The most important aspects that the beat covers and why it matters in general 
+- The main people, institutions, and locations that they should know
+- The most common themes or story types that appear on this beat
+- Any ongoing or emerging issues to watch
+
+Structure the output as a clear, readable newsroom memo with headings, bullet points, and short paragraphs.
+Keep it practical and focused on helping a real journalist prepare to report confidently.
+
