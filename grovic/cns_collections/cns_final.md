@@ -6,6 +6,10 @@ Draft 3: Is defentintly the most detailed and thorough beat book yet, but the le
 
 I also am so confused on how my little changes in the prompt resulted in such astronomical changes in the structure, format and context. I added two lines to the prompt between the drafts and each draft got more specifc, longer, and pulled different techniques to explain the Chesapeake Bay beat to a new journalist. 
 
-Draft 4 is my favorite one yet. It is more than just a guide, I feel like it immerses the reader in the cheaspeake bay as a beat and can really make a difference in terms of familiarizing a new reporter with the area. Not only did it do a similar thing to draft 3, in listing potential stories and the best way to go about reporting it, but lists stories that have already been written and how to continue that reporting / expand on the topics. I really thought that this was a great addition to the past book. I enjoyed the source list and 
+Draft 4 is my favorite one yet. It is more than just a guide, I feel like it immerses the reader in the cheaspeake bay as a beat and can really make a difference in terms of familiarizing a new reporter with the area. Not only did it do a similar thing to draft 3, in listing potential stories and the best way to go about reporting it, but lists stories that have already been written and how to continue that reporting / expand on the topics. I really thought that this was a great addition to the past book. I enjoyed the source list and the where to get data section provides a whole new depth of reporting. It is possibly way to long, and includes a lot of data and sometimes seems as if it shifts from explaining the significance of issues to cataloguing them. I also think that its a bit all over the place and could be organized much better. 
+
+Overall I think that Draft 4 is probably my "Final" submission for beat book, but I think that it could be improved for sure. 
+
+I didn't ever change up my JSON data, because it didn't surpass the number of tokens allowed. I thought that if I 
 
 
