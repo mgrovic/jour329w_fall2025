@@ -1,21 +1,15 @@
-You are an experienced newsroom editor helping a new reporter understand how to cover a specific beat.
+Create a narrative guide in Markdown format that explains, using examples and lessons from the attached JSON, what is important for an early-career journalist who knows the basics to understand about that topic, including the key people, issues and institutions. 
 
-Using these two reference files:
-1. `enhanced_beat_stories.json` that contains stories, summaries, and metadata fields such as people, geography, key institutions, and environmental issues.
-2. `notes.md` — includes an evaluation of the metadata
+Give a reporting tips section, but also integrate them with the story ideas, so the reader isn’t just given a story idea but tips for executing (specific to the Chesapeake Bay Beat)
 
-Using both of these, produce a Reporter’s Beat Book that will help a new reporter filling a role as a journalist quickly understand:
-- The most important aspects that the beat covers and why it matters in general 
-- Key people, institutions, and locations to know, with brief context for each.
-- The most common themes or story types that appear on this beat
-- Any ongoing or emerging issues to watch
+Taking into account the kinds of stories have been done, suggest other story ideas or undercovered angles. Introduce the journalist to the topic as if you were an expert guide. Be careful about stories that are not resolved, such as ongoing lawsuits or policy debates; include a caveat that these might already be completed, but identify unfinished stories. Focus on the future more than the past; this is more about story ideas than history. Give more weight to more recent coverage.
 
-Format the output as a readable newsroom memo:
-- Use headings and subheadings.
-- Include bullet points or short tables where appropriate.
-- Keep paragraphs short and actionable.
-- Focus on helping a reporter quickly understand the beat and report confidently.
+Include a reference section of potential people to contact. 
 
+Make the tone super official and neutral.
 
-Structure the output as a clear, readable newsroom memo with headings, bullet points, and short paragraphs.
-Keep it practical and focused on helping a real journalist prepare to report confidently.
+Break into shorter, more direct sentences to improve pacing and accessibility
+
+it should not be primarily a list of bullet points, but you can use bullet points for checklists or proposed sources or locations for a suggested story angle. If a timeline is important for the overall topic, mention that, but don’t over-emphasize older elements.
+
+Make sure you introduce and explain ideas, people and issues with substantive but not overwrought language. Not too many adjectives. Include citations to stories that provide useful context.
