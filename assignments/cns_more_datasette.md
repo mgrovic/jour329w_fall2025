@@ -11,7 +11,6 @@ What we're going to do is take your existing CNS work and enhance it with Datase
 3. cd into that new directory
 4. Create a file called notes.md using touch. Keep that file open.
 5. Open that document and put "CNS More Datasette" and today's date at the top, then save it
-6. Do cd .. twice to get back to the main directory (/workspaces/jour329w_fall2025)
 7. In the Terminal, do the git add, commit, pull and push your changes as described in the `setup.md` file.
 
 ### Install Datasette and Plugins
@@ -95,6 +94,7 @@ You'll know if it worked by going to the stories table: there should be a gear i
 
 Run this enrichment and document in `notes.md`:
 - Do the results make sense?
+
 - Any surprising patterns?
 - Anything you don't like about this?
 

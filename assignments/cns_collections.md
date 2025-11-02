@@ -51,12 +51,13 @@ uv run sqlite-utils memory ../../data/story_summaries.json \
 Choose a topic from the list that has a good number of stories (aim for at least 50). Then query for all stories in that topic and save them to a JSON file named after your topic. Use this as a template:
 
 ```bash
+#Chesapeake Bay
 # Save all stories for your chosen topic
 # Replace 'Elections' with your actual topic name as it appears in the data
 uv run sqlite-utils memory ../../data/story_summaries.json \
   "SELECT * FROM story_summaries 
-   WHERE topic = 'Elections'" \
-  --json-cols > story_summaries_elections.json
+   WHERE topic = 'Chesapeake Bay'" \
+  --json-cols > story_summaries_Chesapeake_Bay.json
 ```
 
 **Examples for other topics:**
@@ -88,7 +89,7 @@ Verify your results:
 uv run jq 'length' story_summaries_elections.json
 
 ```
-
+#story_summaries_Chesapeake_Bay.json
 Document in `notes.md`:
 - What topic did you choose?
 - How many stories are in your topic?
@@ -101,6 +102,7 @@ Since the `story_summaries.json` file already had AI-generated summaries, you'll
 - **people**: Array of key people mentioned (names only)
 - **geographic_focus**: Primary location (county, city, region, or "statewide")
 - **key_institutions**: Organizations, agencies, companies involved
+- **environmental_issue**: Type of issue or topic (e.g., water quality, habitat restoration, pollution, fisheries, sea-level rise).
 
 You should add any other metadata that you think would be useful. Be sure to describe what and why in `notes.md`.
 
@@ -180,6 +182,7 @@ def main():
     # Define your schema prompt based on your beat - CUSTOMIZE THIS!
     schema_prompt = """
     {
+    - Do NOT include "Chesapeake Bay" in the metadata_geographic_focus column.
       "people": ["Person Name 1", "Person Name 2"],
       "geographic_focus": "Baltimore City",
       "key_institutions": ["Maryland General Assembly", "Department of Environment"],
@@ -245,6 +248,8 @@ uv run python add_metadata.py --model claude-3.5-haiku --input story_summaries_h
 # Run without arguments to see help
 uv run python add_metadata.py
 ```
+cat prompt.txt enhanced_beat_stories.json | uv run llm -m gpt-4o-mini > prototype.md
+
 
 Document any issues in `notes.md`. 
 
@@ -277,10 +282,13 @@ uv run datasette beat_stories.db
 Using facets and filters, explore patterns in your beat (you should facet by array for metadata or tags):
 
 1. **Key Players**: Who appears most frequently?
+Trump by a lot
 
 2. **Geographic Patterns**: Which areas get the most coverage?
+Chesapeake Bay, Maryland
 
 3. **Institutional Network**: Which organizations appear in stories?
+EPA and NOAA
 
 Do these findings make sense? Document your findings in `notes.md`. What changes would you make to the `add_metadata.py` script to refine the metadata output?
 
@@ -313,3 +321,4 @@ git push origin main
 ```
 
 Submit the link to your  `notes.md` in ELMS.
+
