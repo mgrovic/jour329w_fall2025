@@ -66,15 +66,15 @@ As I said earlier, I think that culture and lifestyle might have overlapped a bi
 
 - How would you revise the topic list?
 Local Government and Policy 
-Crime and 
+Crime and Law enforcment
 Education and Schools
-Religion, Culture and Family
+Religion, Culture & Family
 Community
 Food
 Sports and Recreation 
 National News 
 History
-Business and  Economy 
+Business and Economy 
 Development 
 Environment and Bay Sustainability
 Other
