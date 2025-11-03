@@ -6,17 +6,21 @@ DEFAULT_OUTPUT = "stardem_topics_classified.json"
 DEFAULT_MODEL = "groq/meta-llama/llama-4-scout-17b-16e-instruct"
 
 DEFAULT_TOPICS = [
-    "Local Government and Policy",
-    "Crime",
-    "Education",
-    "Religion and Culture",
-    "Food, Family & Lifestyle",
-    "Sports and Recreation",
-    "Regional and National News",
-    "Business and Development",
-    "Environment and Bay Sustainability",
-    "Other",
+   "Local Government and Policy",
+   "Crime and Law Enforcement",
+   "Education and Schools",
+   "Religion, Culture & Family",
+   "Community",
+   "Food and Agriculture",
+   "Sports and Recreation",
+   "National News",
+   "Business and Economy",
+   "Development",
+   "History",
+   "Environment and Bay Sustainability",
+   "Other",
 ]
+
 
 def load_topics(topics_file: str | None) -> List[str]:
     if not topics_file:

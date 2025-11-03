@@ -96,6 +96,22 @@ Maybe, but not entirely. The LLM approach  might have been faster and more consi
 
 
 
+I ran this again with an updated list (Local Government and Policy
+Crime and Law Enforcement
+Education and Schools
+Religion, Culture & Family
+Community
+Food
+Sports and Recreation
+National News
+History
+Business and Economy
+Development
+Environment and Bay Sustainability
+Other
+), after learning from round one. Man I was way more impressed. Everything looked way better
+
+
 Convo With Copilot
 mgrovic: build me a Python script called `classify_topics.py`. I need it to read the json file 'stardem_sample.json', then, using grok, add a topic to each story using the following list: Local Government and Policy 
 Crime 
