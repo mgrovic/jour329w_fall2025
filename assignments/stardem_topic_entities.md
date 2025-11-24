@@ -138,8 +138,10 @@ ORDER BY mentions DESC
 LIMIT 20
 ```
 
+
 - What are the most common places? Organizations?
 - Do these patterns make sense for your chosen topic?
+Big time, 
 - Are there any surprising or unexpected entities?
 - What changes would you need to make to ensure that a beat book built with this information would be properly scoped?
 

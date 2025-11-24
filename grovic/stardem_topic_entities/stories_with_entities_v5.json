@@ -36,7 +36,38 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Rafael Cuevas Uribe: Fisheries Biology Professor at California State Polytechnic University, Humboldt",
+      "Rick Zechman: Associate Dean of Marine Operations at California State Polytechnic University, Humboldt",
+      "Martien van Nieuwkoop: World Bank's Global Director for Agriculture and Food"
+    ],
+    "geographic_focus": [
+      "California",
+      "Maine",
+      "Hawaii",
+      "Alaska",
+      "Humboldt Bay",
+      "Chesapeake Bay",
+      "Gulf of Mexico",
+      "Puget Sound"
+    ],
+    "key_institutions": [
+      "California State Polytechnic University, Humboldt (Cal Poly Humboldt)",
+      "IMARC Group",
+      "Meticulous Market Research Pvt. Ltd.",
+      "World Bank",
+      "NOAA",
+      "U.N. Food and Agriculture Organization",
+      "Environmental Defense Fund"
+    ],
+    "environmental_focus": [
+      "Seaweed farming",
+      "Climate change",
+      "Water pollution",
+      "Ecosystem conservation",
+      "Biodiversity"
+    ]
   },
   {
     "title": "Partner of oyster company petitions for dissolution - Petition follows history of legal violations by company's other partners",
@@ -75,7 +106,27 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Hal McBee: Partner and Secretary of Orchard Point Oyster Company",
+      "Scott Budden: President of Orchard Point Oyster Company",
+      "Brian Connelly: Treasurer of Orchard Point Oyster Company"
+    ],
+    "geographic_focus": [
+      "Stevensville",
+      "Queen Anne's County",
+      "Eastern Bay"
+    ],
+    "key_institutions": [
+      "Maryland Natural Resources Police",
+      "Maryland Department of Natural Resources",
+      "Queen Anne's County Circuit Court"
+    ],
+    "environmental_focus": [
+      "Aquaculture regulation",
+      "Water pollution",
+      "Oyster harvesting"
+    ]
   },
   {
     "title": "Comptroller Lierman visits Eastern Shore",
@@ -118,7 +169,35 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Brooke Lierman: Comptroller of Maryland",
+      "Johnny Shockley: Owner and Founder of Blue Oyster",
+      "Lenny Pfeffer: Dorchester County Council President",
+      "Mike Detmer: Dorchester County Council Vice President",
+      "Beth Anne Dorman: CEO of For All Seasons"
+    ],
+    "geographic_focus": [
+      "Eastern Shore",
+      "Cambridge",
+      "Salisbury",
+      "Easton",
+      "Dorchester County",
+      "Talbot County"
+    ],
+    "key_institutions": [
+      "Dorchester County Council",
+      "Blue Oyster",
+      "Perdue Henson Junior Achievement Center",
+      "Sunburst Pharm",
+      "For All Seasons",
+      "Supreme Court of Maryland"
+    ],
+    "environmental_focus": [
+      "Aquaculture",
+      "Water pollution",
+      "Oyster industry"
+    ]
   },
   {
     "title": "Locals to grow oysters from their docks this fall and winter",
@@ -153,7 +232,25 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Suzanne Anderson: Program Manager",
+      "Jay Anderson: Volunteer"
+    ],
+    "geographic_focus": [
+      "Easton",
+      "Tred Avon River",
+      "Chesapeake Bay"
+    ],
+    "key_institutions": [
+      "Eglseder Wealth Management Group, Inc.",
+      "Marylanders Grow Oysters"
+    ],
+    "environmental_focus": [
+      "Oyster restoration",
+      "Water pollution",
+      "Habitat restoration"
+    ]
   },
   {
     "title": "Crabby Christmas - Watermen Usher In Holidays At Annual Event",
@@ -196,7 +293,35 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Gigi Windley: Kent Narrows Development Foundation representative",
+      "Joey Sadler: Captain's Pride Charters owner",
+      "Karen Sadler: Captain's Pride Charters",
+      "Christy Wilkins: Crab basket tree coordinator",
+      "Bob Timms: Kent Island Methodist Church representative",
+      "Captain Buck Lynch: Waterman's group representative"
+    ],
+    "geographic_focus": [
+      "Kent Narrows",
+      "Kent Island",
+      "Queen Anne's County",
+      "Kentmorr Marina",
+      "Queenstown"
+    ],
+    "key_institutions": [
+      "Queen Anne's County Waterman's Association",
+      "Kent Narrows Development Foundation",
+      "Captain's Pride Charters",
+      "Kent Island Methodist Church",
+      "Kent Island Rotary",
+      "Queenstown Lions Club",
+      "Fishermen's Inn",
+      "Club Interact of Kent Island High School"
+    ],
+    "environmental_focus": [
+      "Oyster restoration"
+    ]
   },
   {
     "title": "Appreciating oysters",
@@ -231,7 +356,23 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [],
+    "geographic_focus": [
+      "Eastern Shore",
+      "Chesapeake Bay",
+      "Delaware Bay",
+      "Gulf Coast",
+      "Easton, MD",
+      "Mason Dixon line"
+    ],
+    "key_institutions": [
+      "Maryland Department of Natural Resources"
+    ],
+    "environmental_focus": [
+      "Oyster fisheries",
+      "Water management"
+    ]
   },
   {
     "title": "Maritime Museum hosts watermen's stories",
@@ -266,7 +407,38 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Brent Lewis: Moderator",
+      "George O'Donnell: Waterman and politician",
+      "Calvert Thompson: Waterman",
+      "Rachel Fazenbaker: Waterman",
+      "Gene Austin: Waterman",
+      "Jeff Harrison: Waterman"
+    ],
+    "geographic_focus": [
+      "St. Michaels",
+      "Chesapeake Bay",
+      "Eastern Shore",
+      "Miles River",
+      "Love Point",
+      "Harris Creek",
+      "Cape Charles",
+      "Virginia",
+      "Mathews Creek",
+      "Little Creek",
+      "Winchester Creek"
+    ],
+    "key_institutions": [
+      "Chesapeake Bay Maritime Museum",
+      "Upper Shore Regional Folklife Center",
+      "Van Lennep Auditorium"
+    ],
+    "environmental_focus": [
+      "Fishing and aquaculture",
+      "Water conditions",
+      "Weather and climate"
+    ]
   },
   {
     "title": "Van Hollen discusses blue catfish, H-2B visas with Eastern Shore Delegation",
@@ -301,7 +473,31 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Chris Van Hollen: U.S. Sen. (D-Md.)",
+      "Ben Cardin: U.S. Sen. (D-Md.)",
+      "Andy Harris: U.S. Rep. (R-Md. 1st)",
+      "Jay Jacobs: Del. (R-Kent, Queen Anne's, Cecil, Caroline)"
+    ],
+    "geographic_focus": [
+      "Eastern Shore",
+      "Chesapeake Bay",
+      "Annapolis",
+      "Maryland"
+    ],
+    "key_institutions": [
+      "U.S. Food and Drug Administration",
+      "U.S. Department of Agriculture",
+      "U.S. Department of Commerce",
+      "U.S. Senate",
+      "Maryland Eastern Shore Delegation"
+    ],
+    "environmental_focus": [
+      "Invasive species",
+      "Water pollution",
+      "Fishery management"
+    ]
   },
   {
     "title": "'Plenty of shell'",
@@ -336,7 +532,33 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Wes Moore: Maryland Governor",
+      "Ron Fithian: Kent County Commission President",
+      "Allison Colden: Chesapeake Bay Foundation Executive Director",
+      "Rob Newberry: Chair of the Delmarva Fisheries Association"
+    ],
+    "geographic_focus": [
+      "Annapolis",
+      "Chesapeake Bay",
+      "Eastern Shore",
+      "Harris Creek",
+      "Lynnhaven River",
+      "Man O'War Shoals"
+    ],
+    "key_institutions": [
+      "Maryland Department of Natural Resources",
+      "Chesapeake Bay Foundation",
+      "Kent County Commission",
+      "Delmarva Fisheries Association",
+      "Virginia Institute of Marine Science"
+    ],
+    "environmental_focus": [
+      "Oyster conservation",
+      "Water pollution",
+      "Habitat restoration"
+    ]
   },
   {
     "title": "Using sunshine to power oyster production",
@@ -371,7 +593,25 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [],
+    "geographic_focus": [
+      "Eastern Shore",
+      "Baltimore",
+      "Fishing Bay",
+      "Dorchester County",
+      "Hoopers Island",
+      "Baltimore Harbor"
+    ],
+    "key_institutions": [
+      "Blue Oyster Environmental LLC",
+      "Solar Oysters LLC",
+      "Hoopers Island Oyster Company"
+    ],
+    "environmental_focus": [
+      "Aquaculture",
+      "Renewable energy"
+    ]
   },
   {
     "title": "Mautz introduces oyster legislation",
@@ -406,7 +646,48 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Johnny Mautz: State Senator",
+      "Jack Bailey: State Senator",
+      "Chris Adams: Delegate",
+      "Allison Colden: Maryland Executive Director, Chesapeake Bay Foundation",
+      "Kristen Fidler: DNR Assistant Secretary for Aquatic Resources",
+      "Jeff Harrison: President, Talbot Watermen Association"
+    ],
+    "geographic_focus": [
+      "Annapolis",
+      "Eastern Bay",
+      "Queen Anne's County",
+      "Talbot County",
+      "Chesapeake Bay",
+      "Maryland",
+      "Caroline County",
+      "Dorchester County",
+      "Wicomico County",
+      "St. Mary's County",
+      "Calvert County",
+      "Broad Creek",
+      "Harris Creek",
+      "Patuxent River",
+      "Holland Point"
+    ],
+    "key_institutions": [
+      "Maryland Department of Natural Resources",
+      "Chesapeake Bay Foundation",
+      "University of Maryland Center for Environmental Science",
+      "Talbot Watermen Association",
+      "Oyster Advisory Commission",
+      "Maryland Watermen Association",
+      "Maryland Oystermen Association",
+      "Coastal Conservation Association Maryland"
+    ],
+    "environmental_focus": [
+      "Oyster management",
+      "Water pollution",
+      "Habitat restoration",
+      "Fisheries management"
+    ]
   },
   {
     "title": "Talbot council considers $100,000 to oyster credit program",
@@ -441,7 +722,26 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Patrick Thomas: County Attorney"
+    ],
+    "geographic_focus": [
+      "Talbot County",
+      "Easton",
+      "Chesapeake Bay",
+      "Maryland"
+    ],
+    "key_institutions": [
+      "Talbot County Council",
+      "Maryland Department of Natural Resources",
+      "Chesapeake Bay Program"
+    ],
+    "environmental_focus": [
+      "Water pollution",
+      "Water quality",
+      "Oyster conservation"
+    ]
   },
   {
     "title": "Local religious leaders pray for prosperity in upcoming crab, clam, fishing seasons at Blessing of the Fleet",
@@ -480,7 +780,32 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Rev. Linda Haddaway King: Clergy",
+      "David McQuay: Lifelong Boat Builder",
+      "Jeannie Haddaway-Riccio: Daughter of Herman Hardaway",
+      "State Sen. Johnny Mautz: State Senator",
+      "State Rep. Christopher Adams: State Representative",
+      "Rev. Rob King: Clergy"
+    ],
+    "geographic_focus": [
+      "Tilghman",
+      "Talbot County",
+      "Dogwood Harbor",
+      "Caroline County",
+      "Dorchester County",
+      "Wicomico County",
+      "Maryland"
+    ],
+    "key_institutions": [
+      "St. John's Chapel",
+      "Maryland Senate"
+    ],
+    "environmental_focus": [
+      "Fishing industry",
+      "Marine conservation"
+    ]
   },
   {
     "title": "Watermen’s Microloan Program assists 'Generational Watermen'",
@@ -515,7 +840,24 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Steve McHenry: MARBIDCO Executive Director",
+      "Brittany Rawlings: MARBIDCO Representative"
+    ],
+    "geographic_focus": [
+      "Maryland",
+      "Potomac River"
+    ],
+    "key_institutions": [
+      "Maryland Agricultural and Resource-Based Industry Development Corporation",
+      "Maryland Department of Natural Resources",
+      "Potomac River Fisheries Commission"
+    ],
+    "environmental_focus": [
+      "Fisheries management",
+      "Water management"
+    ]
   },
   {
     "title": "Skipjack Nathan celebrated amidst festivities on the 4th",
@@ -554,7 +896,29 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "David Rose: Dorchester Skipjack Committee board member",
+      "Pat Johnson: President of the Dorchester Skipjack Committee",
+      "Johnny Mautz: Senator (R-Caroline, Dorchester, Talbot, Wicomico)",
+      "Mike Detmer: Dorchester County Council Vice President"
+    ],
+    "geographic_focus": [
+      "Cambridge",
+      "Long Wharf",
+      "Eastern Shore",
+      "Chesapeake Bay"
+    ],
+    "key_institutions": [
+      "Dorchester Skipjack Committee",
+      "Maryland Senate",
+      "Dorchester County Council"
+    ],
+    "environmental_focus": [
+      "Maritime heritage",
+      "Oyster ecology",
+      "Commercial seafood industry"
+    ]
   },
   {
     "title": "Memories of crab catching adventures",
@@ -589,7 +953,36 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Marie Savage: Author",
+      "Mason: Grandson",
+      "Alan Planner: Loyal Reader",
+      "Darlene Planner: Loyal Reader"
+    ],
+    "geographic_focus": [
+      "Tangier Island",
+      "Easton",
+      "Ocean City",
+      "Delaware",
+      "Federalsburg",
+      "Preston",
+      "Denton",
+      "Cambridge",
+      "Salisbury",
+      "Hebron"
+    ],
+    "key_institutions": [
+      "LNT Seafood",
+      "Blough's Seafood",
+      "Kool Ice and Seafood",
+      "Trident Seafood",
+      "Fat Boys Seafood"
+    ],
+    "environmental_focus": [
+      "Fisheries",
+      "Water quality"
+    ]
   },
   {
     "title": "Watermen harvested 430,000 bushels of Maryland oysters",
@@ -624,7 +1017,22 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Christopher Judy: Shellfish Division Director"
+    ],
+    "geographic_focus": [
+      "Maryland"
+    ],
+    "key_institutions": [
+      "Maryland Department of Natural Resources",
+      "Maryland Department of the Environment"
+    ],
+    "environmental_focus": [
+      "Oyster population",
+      "Water management",
+      "Marine conservation"
+    ]
   },
   {
     "title": "Explore Maryland: Oyster festival on tap this weekend",
@@ -663,7 +1071,27 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Teri Moore: Chairperson for the 2024 U.S. Oyster Festival Committee",
+      "Deborah Reynolds: Oyster Cook-Off participant",
+      "Ellynne Brice Davis: Oyster Cook-Off participant"
+    ],
+    "geographic_focus": [
+      "St. Mary's County",
+      "Southern Maryland",
+      "Lexington Park",
+      "Waldorf",
+      "Leonardtown"
+    ],
+    "key_institutions": [
+      "Rotary Club of Lexington Park",
+      "St. Mary's County Fairgrounds"
+    ],
+    "environmental_focus": [
+      "Oyster harvesting",
+      "Fisheries management"
+    ]
   },
   {
     "title": "Chesapeake Charities honors watermen and seafood industry",
@@ -702,7 +1130,37 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Jack Brooks: President of J.M. Clayton Company",
+      "Ward Slacum: Executive Director of Oyster Recovery Partnership",
+      "Steve Phillips: CEO of Phillips Seafood",
+      "Herman 'Jeff' Harrison: President of Talbot County Watermen Association",
+      "Alexandra Vlk: Medical Student at University of Maryland School of Medicine",
+      "Audrey Scott: Committee Chair of Chesapeake Charities"
+    ],
+    "geographic_focus": [
+      "Stevensville",
+      "Cambridge",
+      "Talbot County",
+      "Chesapeake Bay",
+      "Maryland"
+    ],
+    "key_institutions": [
+      "Chesapeake Charities",
+      "J.M. Clayton Company",
+      "Oyster Recovery Partnership",
+      "Phillips Seafood",
+      "Talbot County Watermen Association",
+      "University of Maryland School of Medicine",
+      "Maryland General Assembly",
+      "U.S. Congress"
+    ],
+    "environmental_focus": [
+      "Oyster restoration",
+      "Seafood industry",
+      "Water conservation"
+    ]
   },
   {
     "title": "Appreciating local oysters",
@@ -741,7 +1199,24 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [],
+    "geographic_focus": [
+      "Eastern Shore",
+      "Chesapeake Bay",
+      "Maryland",
+      "Delaware Bay",
+      "Gulf Coast",
+      "Apalachicola Bay",
+      "Chincoteagues"
+    ],
+    "key_institutions": [
+      "Chesapeake Publishing Group"
+    ],
+    "environmental_focus": [
+      "Oyster fisheries",
+      "Water management"
+    ]
   },
   {
     "title": "With crab season open, Talbot watermen tracking weather and economy",
@@ -776,7 +1251,25 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Jeff Harrison: President of the Talbot Watermen Association"
+    ],
+    "geographic_focus": [
+      "Talbot",
+      "Eastern Shore",
+      "Chesapeake Bay",
+      "Maryland",
+      "Easton"
+    ],
+    "key_institutions": [
+      "Talbot Watermen Association",
+      "Department of Natural Resources"
+    ],
+    "environmental_focus": [
+      "Water pollution",
+      "Fisheries management"
+    ]
   },
   {
     "title": "Planned salmon farm's discharge permit challenged in Cecil County court",
@@ -811,7 +1304,37 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Paul Small: CBF Vice President for Litigation",
+      "Toni Sprenkle: Executive Director of Bainbridge Development Corporation",
+      "Gussie Maguire: CBF Maryland Staff Scientist"
+    ],
+    "geographic_focus": [
+      "Cecil County",
+      "Port Deposit",
+      "Susquehanna River",
+      "Elkton",
+      "Marshyhope Creek",
+      "Caroline County",
+      "Federalsburg",
+      "Maine",
+      "Florida",
+      "Canada",
+      "Denmark",
+      "Maryland"
+    ],
+    "key_institutions": [
+      "Chesapeake Bay Foundation",
+      "Maryland Department of the Environment",
+      "Bainbridge Development Corporation",
+      "AquaCon"
+    ],
+    "environmental_focus": [
+      "Water pollution",
+      "Habitat loss",
+      "Erosion"
+    ]
   },
   {
     "title": "Eastern Shore resident advocates for sustainable seafood on Capitol Hill",
@@ -850,7 +1373,29 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Imani Black: Oyster farmer and founder of Minorities in Aquaculture"
+    ],
+    "geographic_focus": [
+      "Eastern Shore",
+      "Easton",
+      "Washington, D.C.",
+      "Chesapeake Bay",
+      "Maryland",
+      "Virginia"
+    ],
+    "key_institutions": [
+      "Coalition for Sustainable Aquaculture",
+      "Minorities in Aquaculture"
+    ],
+    "environmental_focus": [
+      "Sustainable seafood",
+      "Aquaculture",
+      "Oyster restoration",
+      "Water quality",
+      "Habitat creation"
+    ]
   },
   {
     "title": "'Barge-r' than life: Wye River Oyster Program ensures 21 million oysters in Wye River",
@@ -885,7 +1430,29 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Steve Burleson: Organizer, Wye River Oyster Program",
+      "Ricky Fitzhugh: Owner, Seed to Shuck Ventures"
+    ],
+    "geographic_focus": [
+      "Wye River",
+      "Chesapeake Bay",
+      "Cambridge",
+      "Maryland",
+      "Virginia"
+    ],
+    "key_institutions": [
+      "Wye River Oyster Program",
+      "Mid Shore Community Foundation",
+      "Seed to Shuck Ventures",
+      "Maryland Department of Natural Resources"
+    ],
+    "environmental_focus": [
+      "Oyster restoration",
+      "Water quality",
+      "Habitat restoration"
+    ]
   },
   {
     "title": "Replenishing reefs and the region",
@@ -920,7 +1487,39 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Emma Ewing: St. Mary's River Watershed Association Executive Director",
+      "Amy Jacobs: The Nature Conservancy Chesapeake Bay Director",
+      "Dan Sweeney: The Nature Conservancy SOAR Lead",
+      "Jon Farrington: Johnny Oyster Seed Company owner"
+    ],
+    "geographic_focus": [
+      "St. Mary's River",
+      "Chesapeake Bay",
+      "St. Mary's College of Maryland",
+      "Tall Timbers",
+      "St. Leonard",
+      "Hollywood",
+      "Maryland",
+      "Southern Maryland"
+    ],
+    "key_institutions": [
+      "The Nature Conservancy",
+      "Pew Charitable Trust",
+      "Maryland Department of Natural Resources",
+      "St. Mary's River Watershed Association",
+      "Shore Thing Shellfish",
+      "Johnny Oyster Seed Company",
+      "Loose Stones Oyster Company"
+    ],
+    "environmental_focus": [
+      "Oyster restoration",
+      "Water filtration",
+      "Habitat restoration",
+      "Aquaculture",
+      "Ecosystem health"
+    ]
   },
   {
     "title": "Oyster regulations to remain unchanged in upcoming season",
@@ -955,7 +1554,25 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Gregg Bortz: DNR Media Relations Manager",
+      "Allison Colden: Maryland Executive Director of the Chesapeake Bay Foundation"
+    ],
+    "geographic_focus": [
+      "Maryland",
+      "Chester River",
+      "Chesapeake Bay"
+    ],
+    "key_institutions": [
+      "Maryland Department of Natural Resources",
+      "Chesapeake Bay Foundation"
+    ],
+    "environmental_focus": [
+      "Oyster habitats",
+      "Water management",
+      "Sustainability"
+    ]
   },
   {
     "title": "USDA secretary, Andy Harris announce $6M in grants for blue catfish processors",
@@ -994,7 +1611,29 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Brooke Rollins: U.S. Secretary of Agriculture",
+      "Andy Harris: Rep. (R-Md., 1st)",
+      "Nick Hargrove: Owner of Tilghman Island Seafood"
+    ],
+    "geographic_focus": [
+      "Tilghman Island",
+      "Eastern Shore",
+      "Chesapeake Bay",
+      "Maryland",
+      "San Francisco",
+      "Hong Kong"
+    ],
+    "key_institutions": [
+      "USDA",
+      "Maryland Department of Agriculture"
+    ],
+    "environmental_focus": [
+      "Invasive species",
+      "Overfishing",
+      "Water pollution"
+    ]
   },
   {
     "title": "U.S. labor secretary visits Cambridge oyster hatchery on workforce tour",
@@ -1029,6 +1668,26 @@
     "llm_classification_meta": {
       "model": "gpt-oss:120b",
       "llm_failed": false
-    }
+    },
+    "people": [
+      "Lori Chavez-DeRemer: U.S. Secretary of Labor",
+      "Stephanie Alexander: Manager of the UMCES Horn Point Laboratory"
+    ],
+    "geographic_focus": [
+      "Cambridge",
+      "Maryland",
+      "Japan"
+    ],
+    "key_institutions": [
+      "U.S. Department of Labor",
+      "UMCES Horn Point Laboratory",
+      "Horn Point Oyster Hatchery"
+    ],
+    "environmental_focus": [
+      "Aquaculture",
+      "Oyster industry",
+      "Restoration sector",
+      "Water management"
+    ]
   }
 ]
