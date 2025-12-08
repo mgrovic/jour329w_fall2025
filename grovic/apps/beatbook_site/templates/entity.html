@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ name }} — {{ kind }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>{{ name }}</h1>
+    {% if title %}<p class="sub">{{ title }}</p>{% endif %}
+    <p><a href="/">← Back</a></p>
+  </header>
+
+  <section>
+    <h2>Context</h2>
+    <pre class="context">{{ context }}</pre>
+  </section>
+</body>
+</html>

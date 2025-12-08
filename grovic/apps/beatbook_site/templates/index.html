@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Beat Book — Quick Reference</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Beat Book — Quick Reference</h1>
+    <p>Names, titles, and brief context — no narrative.</p>
+  </header>
+
+  <section class="draw">
+    <div class="toolbar">
+      <button id="drawBtn">Draw Random Person</button>
+      <button id="resetBtn" class="ghost">Reset Used Names</button>
+    </div>
+    <div id="card" class="card hidden">
+      <div class="card-header">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="title-wrap">
+          <h2 id="cardName">Person Name</h2>
+          <p id="cardTitle" class="sub"></p>
+        </div>
+      </div>
+      <pre id="cardContext" class="context"></pre>
+      <div class="card-actions">
+        <a id="cardLink" href="#" target="_self">Open details</a>
+      </div>
+    </div>
+    <p id="exhausted" class="muted hidden">All names have been used. Reset to draw again.</p>
+  </section>
+
+  <section>
+    <h2>People by Category</h2>
+    <div class="grid">
+      {% for cat, entries in people_by_cat.items() %}
+        <div class="panel">
+          <h3>{{ cat }}</h3>
+          <ul>
+            {% for name, title in entries %}
+              <li>
+                <a href="/entity?kind=Person&name={{ name | urlencode }}">{{ name }}</a>
+                {% if title %}<span class="sub">— {{ title }}</span>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <script>
+    const allNames = {{ all_names | tojson }};
+    const usedKey = 'beatbook_used_names_v1';
+    const used = new Set(JSON.parse(localStorage.getItem(usedKey) || '[]'));
+
+    function saveUsed() {
+      localStorage.setItem(usedKey, JSON.stringify([...used]));
+    }
+
+    function drawName() {
+      const unused = allNames.filter(n => !used.has(n));
+      const exhaustedEl = document.getElementById('exhausted');
+      if (unused.length === 0) {
+        exhaustedEl.classList.remove('hidden');
+        return null;
+      }
+      exhaustedEl.classList.add('hidden');
+      const pick = unused[Math.floor(Math.random() * unused.length)];
+      used.add(pick);
+      saveUsed();
+      return pick;
+    }
+
+    async function showCardFor(name) {
+      const res = await fetch(`/entity.json?name=${encodeURIComponent(name)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      document.getElementById('cardName').textContent = data.name || name;
+      document.getElementById('cardTitle').textContent = data.title || '';
+      document.getElementById('cardContext').textContent = (data.context || '').trim();
+      const link = `/entity?kind=Person&name=${encodeURIComponent(data.name || name)}`;
+      const linkEl = document.getElementById('cardLink');
+      linkEl.href = link;
+      const card = document.getElementById('card');
+      card.classList.remove('hidden');
+    }
+
+    document.getElementById('drawBtn').addEventListener('click', async () => {
+      const picked = drawName();
+      if (picked) await showCardFor(picked);
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      used.clear();
+      saveUsed();
+      document.getElementById('card').classList.add('hidden');
+      document.getElementById('exhausted').classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

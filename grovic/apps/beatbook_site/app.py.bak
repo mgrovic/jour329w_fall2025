@@ -1,0 +1,143 @@
+import os, csv, re
+from pathlib import Path
+from collections import defaultdict, Counter
+from flask import Flask, render_template, request, abort, jsonify
+
+BASE = Path("/workspaces/jour329w_fall2025")
+CSV_PATH = BASE / "grovic" / "stardem_nearly_final" / "people_md_de_va.csv"
+MD_INPUT = BASE / "beatbook_revised.md"
+
+EMAIL_RE = re.compile(r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}\b')
+PHONE_RE = re.compile(r'''
+    (?<!\w)
+    (?:\+?\d{1,3}[\s.\-]?)?
+    (?:\(?\d{3}\)?[\s.\-]?)
+    \d{3}[\s.\-]?\d{4}
+    (?:\s*(?:ext|x|\#)\s*\d{1,6})?
+    (?!\w)
+''', re.VERBOSE)
+MD_LINK_RE = re.compile(r'\[([^\]]+)\]\((?:https?:\/\/|mailto:)[^\)]+\)')
+URL_RE = re.compile(r'\bhttps?:\/\/\S+\b')
+
+def clean_ws(s: str) -> str:
+    return re.sub(r'\s+', ' ', s).strip()
+
+def strip_contacts(text: str) -> str:
+    text = MD_LINK_RE.sub(r'\1', text)
+    text = URL_RE.sub('', text)
+    text = EMAIL_RE.sub('', text)
+    text = PHONE_RE.sub('', text)
+    text = re.sub(r'\(\s*\)', '', text)
+    return clean_ws(text)
+
+def normalize_name(name: str) -> str:
+    return re.sub(r'\s+', ' ', name.strip().lower())
+
+def load_people(csv_path: Path):
+    people = {}
+    categories = defaultdict(list)
+    if not csv_path.exists():
+        return people, categories
+    with csv_path.open(newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            name = (row.get('name') or row.get('Name') or row.get('ame') or '').strip()
+            title = (row.get('title') or row.get('Title') or '').strip()
+            cat = (row.get('category') or row.get('Category') or '').strip()
+            if not name:
+                continue
+            disp = clean_ws(name)
+            norm = normalize_name(disp)
+            title_clean = clean_ws(title)
+            people[norm] = {'display_name': disp, 'title': title_clean, 'category': cat}
+            if cat:
+                categories[cat].append((disp, title_clean))
+    for c in categories:
+        categories[c].sort(key=lambda x: x[0].split()[-1].lower())
+    return people, categories
+
+def load_markdown(md_path: Path):
+    if not md_path.exists():
+        return ""
+    text = md_path.read_text(encoding='utf-8')
+    lines = [strip_contacts(ln) for ln in text.splitlines()]
+    return "\n".join(lines)
+
+def extract_entities(people_map, text):
+    orgs = Counter()
+    places = Counter()
+    org_patterns = [
+        r'\b[A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z&\-]+){1,5}\b',
+        r'\b[A-Z]{2,}(?:\s+[A-Z]{2,})*\b',
+    ]
+    place_patterns = [
+        r'\b[A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*\s+(County|River|Bay|City|Town|Park|State|Creek|Harbor)\b'
+    ]
+    for ln in text.splitlines():
+        for pat in org_patterns:
+            for m in re.findall(pat, ln):
+                if len(m.split()) >= 2:
+                    orgs[m] += 1
+        for pat in place_patterns:
+            for m in re.findall(pat, ln):
+                places[m] += 1
+    people_index = {p['display_name']: p for p in people_map.values()}
+    org_index = {name: {'name': name, 'count': cnt} for name, cnt in orgs.items()}
+    place_index = {name: {'name': name, 'count': cnt} for name, cnt in places.items()}
+    return people_index, org_index, place_index
+
+def find_context_for_name(name, text, max_lines=6):
+    name_norm = normalize_name(name)
+    matched = []
+    for ln in text.splitlines():
+        if normalize_name(ln).find(name_norm) != -1:
+            if ln.strip():
+                matched.append(ln.strip())
+    return "\n".join(matched[:max_lines])
+
+app = Flask(__name__)
+PEOPLE_MAP, PEOPLE_BY_CAT = load_people(CSV_PATH)
+TEXT = load_markdown(MD_INPUT)
+PEOPLE_IDX, ORG_IDX, PLACE_IDX = extract_entities(PEOPLE_MAP, TEXT)
+ALL_DISPLAY_NAMES = [p['display_name'] for p in PEOPLE_MAP.values()]
+ALL_DISPLAY_NAMES.sort()
+
+@app.route("/")
+def index():
+    return render_template(
+        "index.html",
+        people_by_cat=PEOPLE_BY_CAT,
+        orgs=sorted(ORG_IDX.items(), key=lambda x: -x[1]['count'])[:50],
+        places=sorted(PLACE_IDX.items(), key=lambda x: -x[1]['count'])[:50],
+        all_names=ALL_DISPLAY_NAMES,
+    )
+
+@app.route("/entity")
+def entity():
+    name = request.args.get("name", "").strip()
+    kind = request.args.get("kind", "Person")
+    if not name:
+        abort(400)
+    person_data = PEOPLE_MAP.get(normalize_name(name)) if kind == "Person" else None
+    disp = person_data["display_name"] if person_data else name
+    ctx = find_context_for_name(disp, TEXT, max_lines=8)
+    title = person_data["title"] if person_data else ""
+    return render_template("entity.html", name=disp, kind=kind, title=title, context=ctx)
+
+@app.route("/entity.json")
+def entity_json():
+    name = request.args.get("name", "").strip()
+    if not name:
+        abort(400)
+    person_data = PEOPLE_MAP.get(normalize_name(name))
+    if not person_data:
+        title = ""
+        ctx = find_context_for_name(name, TEXT, max_lines=6)
+        return jsonify({"name": name, "title": title, "context": ctx})
+    disp = person_data["display_name"]
+    title = person_data["title"]
+    ctx = find_context_for_name(disp, TEXT, max_lines=6)
+    return jsonify({"name": disp, "title": title, "context": ctx})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", "8000")), debug=True)
