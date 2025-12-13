@@ -1,0 +1,19 @@
+1. How has your understanding of what LLMs are useful for in a journalism context changed during this class?
+
+Jeez where do I even start! 
+I guess I can summarize it through an analogy I told a teammate when telling them about this class. He asks “how does AI play a role in journalism? Is an LLM going to write the news I read in the future?” and my answer was AI in Journalism is like a lion following you through the jungle. You have to tame the lion before it eats you. 
+	What this means to me is that people will never trust news sources if they are having a robot* write and edit the news they read. So what journalists and news outlets need to do is utilize AI to make the news they produce MORE trustworthy. An example that sticks out in my mind that best represents this is the article we read about the researchers who used AI to look through Xray readings to identify malpractices in a hospital. 
+Coming into this class, I honestly didn’t know if AI had any place in journalism. I hadn’t given it much thought to be fair, but it did seem like AI had no place in Journalism. I felt like it may corrupt the integrity of the whole institution (I still feel like it could). But obviously as I have progressed through this class and read the articles assigned, I can see clearly that we (as journalists) have to evolve with the times. AI is taking over every industry and ours is no different. Using AI as a tool to better research, organize and edit will be the future of journalism, but we can’t let AI use creep out of hand and take over the industry. 
+
+
+2. What are the biggest problems you've had using LLMs for the work in this class?
+
+There are definitely a plethora of issues that I have had while using LLMs. It is not an easy lion to tame and it requires a lot of attention to provide you with the specific result you want. I think personally my biggest issue was the AI’s ability to take what I gave it and run with it, taking it to lengths I didn’t want it to go. For example, this issue was especially relevant with copilot.  I would ask copilot for a simple script that performed one or two actions. Copilot would run with this and expand on it and give me more than I asked for. Specifically when I asked for websites, copilot would create folders and run different actions and different times in different places and just muck things up and generally overcomplicate things. Then, when something went array, I would have immense difficulty tracking down the root of the issue and fixing it. When I asked it to fix itself it would add more code to “fix” the mistake it made and make it more complicated and so on and so forth. If copilot was able to take what I gave it and do exactly that, it would be super helpful (duh). There are so many other issues that I faced, incorrect information given, information made up and so on. 
+
+
+3. What specific advice would you give to fellow journalism students about using LLMs to understand news stories or archives?
+
+
+I would give them a couple points to think about. First, don’t over rely on LLMs. Yes they can speed things up, but for the most part, human errors are smaller and much easier to fix. Over-reliance on AI will end up being the downfall of journalism (pessimism), and people who are trained to do this generally will make fewer mistakes.
+With that being said, an LLM can do the tedious things faster and at a much larger scale. Take the X-ray example, if a human had gone through these records, it may have taken a much longer time, or not been found at all. These types of tasks are the types of journalistic tasks that an LLM can be extremely helpful for. And finally, beatbook type things are the future of journalism. These are things that most likely will not be published but instead are tools that help journalists perform their duties with more context and information, leading them to do their jobs better.
+
