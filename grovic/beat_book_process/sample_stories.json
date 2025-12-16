@@ -1,0 +1,20 @@
+[
+  {
+    "id": "news/0001",
+    "title": "Oyster aquaculture lease advances near Oxford",
+    "content": "State regulators advanced an oyster aquaculture lease near Oxford channel...",
+    "people": [
+      {"name": "Jane Doe", "title": "DNR Shellfish Division Director"},
+      {"name": "John Smith", "title": "Talbot County Council Member"}
+    ]
+  },
+  {
+    "id": "news/0002",
+    "title": "ShoreRivers launches new Choptank monitoring",
+    "content": "ShoreRivers announced expanded monitoring in the Choptank watershed...",
+    "people": [
+      {"name": "Alex Rivera", "title": "Choptank Riverkeeper"},
+      {"name": "Taylor Kim", "title": "University of Maryland Researcher"}
+    ]
+  }
+]
