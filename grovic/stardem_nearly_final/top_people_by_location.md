@@ -1,0 +1,54 @@
+# Top 50 People by Location (Eastern Shore)
+
+## Eastern Shore (General)
+- **Rachel Jacobson** — Assistant Secretary of the Army for Installations, Energy and Environment; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Anthony Brown** — Attorney General; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Alice Volpitta** — Baltimore Harbor Waterkeeper for Blue Water Baltimore; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Gussie Maguire** — CBF Maryland Staff Scientist; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Paul Small** — CBF Vice President for Litigation; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Steve Phillips** — CEO, Phillips Seafood; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Libby Garvey** — Chair of the Arlington County Board; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Rob Newberry** — Chair of the Delmarva Fisheries Association; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Rob Newberry** — Chairman of Delmarva Fisheries Association; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Amy Jacobs** — Chesapeake Bay Director; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Allison Colden** — Chesapeake Bay Foundation Executive Director; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Joe Wood** — Chesapeake Bay Foundation Virginia Senior Scientist; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Allison Colden** — Chesapeake Bay Foundation's Maryland Executive Director; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Jana Davis** — Chesapeake Bay Trust President; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Autumn Conley** — Chesapeake Conservation and Climate Corps member; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Annie Richards** — Chester Riverkeeper; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Albert Nickerson** — Chestertown Councilman; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Matt Pluta** — Choptank Riverkeeper; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Matt Pluta** — Choptank riverkeeper and director of riverkeeper programs for ShoreRivers; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Bethany Ziegler** — Communications Director; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Brooke Lierman** — Comptroller; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Brooke Lierman** — Comptroller of Maryland; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Travis Breeding** — County Commission President; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Kristen Fidler** — DNR Assistant Secretary for Aquatic Resources; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Gregg Bortz** — DNR media relations manager; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Shawn Garvin** — DNREC Secretary; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Joe Rogerson** — DNREC wildlife biologist; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Steve Arentz** — Del.; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Jefferson Ghrist** — Del.; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Jay Jacobs** — Del.; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Sara Love** — Del.; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Chris Adams** — Del.; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Chris Adams** — Delegate; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Marc Korman** — Delegate; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Kristin Reilly** — Director of the Choose Clean Water Coalition; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Carrie Selberg Robinson** — Director, NOAA Habitat Conservation Office; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Lenny Pfeffer** — Dorchester County Council President; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Mike Detmer** — Dorchester County Council Vice President; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Mark Rupp** — EPA Assistant Deputy Administrator; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Alan Girard** — Eastern Shore director; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Alan Girard** — Eastern Shore director at the Chesapeake Bay Foundation; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Jay Falstad** — Executive Director of Queen Anne's Conservation Association; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Holly Porter** — Executive Director of the Delmarva Chicken Association; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Jay Falstad** — Executive Director of the Queen Anne's Conservation Association; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Allison Colden** — Executive Director, Chesapeake Bay Foundation; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Ward Slacum** — Executive Director, Oyster Recovery Partnership; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Susan Coomer** — First Vice-President of the Chestertown Garden Club; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Robert Ehrlich** — Former Governor; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Joan Maloof** — Founder of Old-Growth Forest Network; . Relevant to Eastern Shore environment/aquaculture coverage.
+- **Wes Moore** — Gov.; . Relevant to Eastern Shore environment/aquaculture coverage.
+

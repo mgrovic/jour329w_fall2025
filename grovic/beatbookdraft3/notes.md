@@ -1,9 +1,0 @@
-For beatbook draft three I made it my mission to take the beatbooks that I have created to start refining and specifying, in order to get the best product. My first step was to ask copilot to make a script that both combined my first two drafts (draft1: a short but well organized beatbook, with strong narrative but lacking in detail) and (draft2: an extremely long beatbook with a plethera of information and specifics but very poor organization and an obsurd lack of narritive) and that focused the book geopraphicly. I thought that both of these two drafts had very strong upside, so I assumed if I created a script that combined the two drafts (beatbook_combiner.py) that it would create a perfect beatbook. 
-The final product that came from beatbook_combiner.py was beatbook_combined.md (lol). My first time reading through I was pretty impressed with the final product, as it did exactly what I wanted, hitting all three of my marks. 
-1. It was well organized, and hit all the categories that I wanted it to.
-2. It categorized a lot of information by county/location, making it more geographically focused.
-3. It took draft 2's insane amount of information and distributed it well, organizationaly. 
-
-Although I was quite happy with the result, I could sense that it was still missing something, so I shot you an email, asking about this draft. You said it was obviously lacking narrative, as it was still pretty bullet point heavy (left over from draft 2). 
-
-This lead me to the next part of draft 3, which was a bit easier. I had copilot edit my combiner script to take the combined.md script and make it take the information from the combined beatbook, keeping the organizational structure, but making it more narrative based. 

@@ -1,0 +1,128 @@
+# People Appendix
+
+A consolidated list of people, positions, and organizations from the provided sources.
+
+- **Name:** Al Martinez — **Position:** President of the Tuckahoe Equestrian Center — **Organization:**  — Sources: news/19AFB81A0D6CC098
+- **Name:** Alan Girard — **Position:** Maryland advocacy director at the Chesapeake Bay Foundation — **Organization:**  — Sources: news/19738B66CCECCAC8, news/19739A3400E01348, news/19859F478E8F9D88, news/19996565990F4C68
+- **Name:** Albert Nickerson — **Position:** Chestertown Councilman — **Organization:**  — Sources: news/194C45AA4EBC7218
+- **Name:** Alice Volpitta — **Position:** Baltimore Harbor Waterkeeper for Blue Water Baltimore — **Organization:**  — Sources: news/19937841FA241C08
+- **Name:** Allison Colden — **Position:** Maryland executive director of the Chesapeake Bay Foundation — **Organization:**  — Sources: news/194D0372B2A587C8, news/19738B6628F415C8, news/19791D446EEA0280, news/1980197EC51EF960, news/19928E2A58D6BBF0, news/1998652A4A4D2948, news/1999656585E1E3D0, news/19B9101A68745E78, news/1A1D91A20E512170
+- **Name:** Amanda Poskaitis — **Position:** coastal resilience program manager — **Organization:**  — Sources: news/19739A34AE21B910
+- **Name:** Amy Jacobs — **Position:** Chesapeake Bay Director — **Organization:**  — Sources: news/1A1C908E7A4242C8
+- **Name:** Andy Harris — **Position:** U.S. Representative — **Organization:**  — Sources: news/19739A2D4A388FD8, news/19739A2E14530C78, news/19B9101D28177938, news/1A252371635BD1A0
+- **Name:** Annie Richards — **Position:** Chester Riverkeeper — **Organization:**  — Sources: news/19480AE592DD6050, news/19A04E9D5D7B35F0
+- **Name:** Anthony Brown — **Position:** Attorney General — **Organization:**  — Sources: news/19739A2E58FA12D0
+- **Name:** Aruna Miller — **Position:** Lt. Gov. — **Organization:**  — Sources: news/1939343E6BAFB358
+- **Name:** Autumn Conley — **Position:** Chesapeake Conservation and Climate Corps member — **Organization:**  — Sources: news/198B8E098F8CC238
+- **Name:** Ben Cardin — **Position:** U.S. Senator — **Organization:**  — Sources: news/194C45AA2C2DFB78, news/19739A2D4A388FD8, news/19739A2E14530C78, news/197A6F6F139755C8
+- **Name:** Ben Ford — **Position:** Miles-Wye riverkeeper — **Organization:**  — Sources: news/195ADD0B34711068
+- **Name:** Ben Grumbles — **Position:** Maryland Environment Secretary — **Organization:**  — Sources: news/19937841FA241C08
+- **Name:** Beth Schlimm — **Position:** Maryland DNR Herptologist — **Organization:** Maryland Department of Natural Resources — Sources: news/19859F46F5D58650
+- **Name:** Bethany Ziegler — **Position:** Communications Director — **Organization:**  — Sources: news/198BA2D671D03280
+- **Name:** Bettye Maki — **Position:** Talbot Bird Club president — **Organization:**  — Sources: news/19757B561DCBFDA0
+- **Name:** Bill Dennison — **Position:** UMCES Vice President — **Organization:**  — Sources: news/1943F02EB2460A78
+- **Name:** Bob Campbell — **Position:** National Park Service Planning and Development Manager — **Organization:**  — Sources: news/194C45AA4EBC7218
+- **Name:** Brian Connelly — **Position:** Orchard Point treasurer — **Organization:**  — Sources: news/194D0372B0A07C80
+- **Name:** Brian Hardman — **Position:** President of the Maryland Charter Boat Association — **Organization:**  — Sources: news/1983F9E656B36AA8
+- **Name:** Brian Schmidt — **Position:** Trappe Town Council president — **Organization:**  — Sources: news/19996565990F4C68
+- **Name:** Brooke Lierman — **Position:** Comptroller of Maryland — **Organization:**  — Sources: news/1939343E6BAFB358, news/194FFA2A5DB11300
+- **Name:** Brooks Cahall — **Position:** planning preservation and development section manager for DNREC — **Organization:**  — Sources: news/1975265F25225130
+- **Name:** Calvert Thompson — **Position:** waterman — **Organization:**  — Sources: news/19739A2A8FC36680
+- **Name:** Carrie Selberg Robinson — **Position:** Director, NOAA Habitat Conservation Office — **Organization:**  — Sources: news/194D0372B2A587C8
+- **Name:** Cheryl Lewis — **Position:** Town Manager — **Organization:**  — Sources: news/19739A2861262CF0, news/19739A34AE21B910
+- **Name:** Chris Adams — **Position:** Delegate — **Organization:**  — Sources: news/19738B66CCECCAC8, news/19739A3400E01348, news/19791D446EEA0280
+- **Name:** Chris Markin — **Position:** program manager for Maryland DNR's Information and Hunting R3 program — **Organization:** Maryland Department of Natural Resources — Sources: news/19559A57F5DFA428
+- **Name:** Chris Moore — **Position:** executive director of Chesapeake Bay Foundation — **Organization:**  — Sources: news/1998652A4A4D2948
+- **Name:** Chris Van Hollen — **Position:** U.S. Senator — **Organization:**  — Sources: news/1939343E69920378, news/1943CF38E08276C8, news/194C45AA2C2DFB78, news/19739A2D4A388FD8, news/19739A2E14530C78
+- **Name:** Chrissy Houlahan — **Position:** U.S. Representative — **Organization:**  — Sources: news/195E42E46F98FF60
+- **Name:** Christa Carignan — **Position:** University of Maryland Extension coordinator of digital horticulture education — **Organization:**  — Sources: news/19432574B8F03F88
+- **Name:** Christopher Judy — **Position:** Shellfish Division Director — **Organization:** Maryland Department of Natural Resources — Sources: news/19B0719117E93B28
+- **Name:** Chuck Callahan — **Position:** Talbot County Council President — **Organization:**  — Sources: news/19738B65B9DFE330
+- **Name:** Darran White Tilghman — **Position:** Shore Rivers Community Engagement Director — **Organization:**  — Sources: news/19480AE5C09E8DD8, news/194DEE28DA9246D0
+- **Name:** David Sikorski — **Position:** executive director of the Coastal Conservation Association in Maryland — **Organization:**  — Sources: news/19B9101A68745E78
+- **Name:** David Trone — **Position:** U.S. Representative — **Organization:**  — Sources: news/197A6F6F139755C8
+- **Name:** Desiree Greaver — **Position:** project manager for the Back River Restoration Committee — **Organization:**  — Sources: news/19937841FA241C08
+- **Name:** Don Beyer — **Position:** Rep. (D-Virginia) — **Organization:**  — Sources: news/1981563EDB445CA8
+- **Name:** Doug Tallamy — **Position:** author and naturalist — **Organization:**  — Sources: news/199634BFD964DEA8
+- **Name:** Dutch Ruppersberger — **Position:** U.S. Representative — **Organization:**  — Sources: news/197A6F6F139755C8
+- **Name:** Erin Braband — **Position:** Trappe's town clerk — **Organization:**  — Sources: news/19738B65B9DFE330
+- **Name:** Eugene Austin — **Position:** waterman — **Organization:**  — Sources: news/19739A2A8FC36680
+- **Name:** Eva Monheim — **Position:** Horticultural author — **Organization:**  — Sources: news/19739A3486D86D18
+- **Name:** Francis Smith — **Position:** of the Maryland Forest Service — **Organization:**  — Sources: news/19893CE35DADF620
+- **Name:** Gerry Connolly — **Position:** Rep. (D-Virginia) — **Organization:**  — Sources: news/1981563EDB445CA8
+- **Name:** Gregg Bortz — **Position:** DNR media relations manager — **Organization:** Maryland Department of Natural Resources — Sources: news/1A1D91A20E512170
+- **Name:** Gussie Maguire — **Position:** CBF Maryland Staff Scientist — **Organization:** Chesapeake Bay Foundation — Sources: news/1A039C62D60E60A8
+- **Name:** Herman Harrison — **Position:** President, Talbot County Watermen Association — **Organization:**  — Sources: news/19D2195F62BBFBA8
+- **Name:** Holly Michael — **Position:** Professor of Earth Sciences — **Organization:**  — Sources: news/194BA1B163917030
+- **Name:** Holly Porter — **Position:** Executive Director of the Delmarva Chicken Association — **Organization:**  — Sources: news/19AFB81A0D6CC098
+- **Name:** Isabel Hardesty — **Position:** ShoreRivers Executive Director — **Organization:**  — Sources: news/198B8E098F8CC238
+- **Name:** Jamie Raskin — **Position:** U.S. Representative — **Organization:**  — Sources: news/195E42E46F98FF60
+- **Name:** Jana Davis — **Position:** Chesapeake Bay Trust President — **Organization:**  — Sources: news/19937841FA241C08
+- **Name:** Jay A. Perman — **Position:** University System of Maryland Chancellor — **Organization:**  — Sources: news/1943F02EB2460A78
+- **Name:** Jay Falstad — **Position:** Executive Director of the Queen Anne's Conservation Association — **Organization:**  — Sources: news/19859F46F5D58650, news/19893CE35DADF620, news/199634BFD964DEA8, news/199DAE83E3A90F10
+- **Name:** Jay Jacobs — **Position:** state Delegate — **Organization:**  — Sources: news/194C45AA4EBC7218, news/19739A2D4A388FD8, news/1977C762599A0808
+- **Name:** Jeff Ghrist — **Position:** State Del. — **Organization:**  — Sources: news/1977C762599A0808, news/197AC17F9E377940, news/19AFB81A0D6CC098
+- **Name:** Jeff Harrison — **Position:** president of the Talbot Watermen Association — **Organization:**  — Sources: news/19739A2A8FC36680, news/19791D446EEA0280, news/1A00E1B926F488C0
+- **Name:** Jefferson Ghrist — **Position:** Del. — **Organization:**  — Sources: news/19739A3577648EA8
+- **Name:** Jennie Schmidt — **Position:** Sudlersville farmer — **Organization:**  — Sources: news/19432574B8F03F88
+- **Name:** Jenny Houghton — **Position:** assistant director of Adkins Arboretum — **Organization:**  — Sources: news/19893CE35DADF620
+- **Name:** Joan Maloof — **Position:** Founder of Old-Growth Forest Network — **Organization:**  — Sources: news/19739A2869BA4040
+- **Name:** Joe Biden — **Position:** President — **Organization:**  — Sources: news/1981563EDB445CA8
+- **Name:** Joe Rogerson — **Position:** DNREC wildlife biologist — **Organization:**  — Sources: news/19B9101B0BE9D9B8
+- **Name:** Joe Wood — **Position:** Chesapeake Bay Foundation Virginia Senior Scientist — **Organization:**  — Sources: news/195ADD0B2FB9A2D8
+- **Name:** Joel Dunn — **Position:** President and CEO of Chesapeake Conservancy — **Organization:**  — Sources: news/1939343E69920378
+- **Name:** John Carney — **Position:** Governor — **Organization:**  — Sources: news/194D0372DDCC4008
+- **Name:** John Sarbanes — **Position:** U.S. Representative — **Organization:**  — Sources: news/1943CF38E08276C8, news/194D0372B2A587C8, news/197A6F6F139755C8
+- **Name:** Johnny Mautz — **Position:** State Sen. — **Organization:**  — Sources: news/1977C762599A0808, news/19791D446EEA0280, news/1985F5D540329D08, news/1999656585E1E3D0, news/19B9101D28177938
+- **Name:** Johnny Shockley — **Position:** owner and founder of Blue Oyster — **Organization:**  — Sources: news/194FFA2A5DB11300
+- **Name:** Justin Ready — **Position:** Senator — **Organization:**  — Sources: news/19738B66CCECCAC8, news/19739A3400E01348
+- **Name:** Karen Couch — **Position:** Kent County Superintendent of Schools — **Organization:**  — Sources: news/194C45AA4EBC7218
+- **Name:** Kenneth Jeffries — **Position:** Vice President of the Upper Bay Charter Captains Association — **Organization:**  — Sources: news/1983F9E656B36AA8
+- **Name:** Kent Mountford — **Position:** biologist — **Organization:** Calvert Marine Museum — Sources: news/1950460C1C61A7D0
+- **Name:** Kevin Atticks — **Position:** Maryland Secretary of Agriculture — **Organization:**  — Sources: news/19739A3577648EA8
+- **Name:** Kristen Fidler — **Position:** DNR Assistant Secretary for Aquatic Resources — **Organization:** Maryland Department of Natural Resources — Sources: news/19791D446EEA0280
+- **Name:** Kristin Reilly — **Position:** Director of the Choose Clean Water Coalition — **Organization:**  — Sources: news/197A6F6F139755C8
+- **Name:** Lee Currey — **Position:** water and science administration director — **Organization:**  — Sources: news/194A034A9E234178
+- **Name:** Lenny Pfeffer — **Position:** Dorchester County Council President — **Organization:**  — Sources: news/194FFA2A5DB11300
+- **Name:** Libby Garvey — **Position:** Chair of the Arlington County Board — **Organization:**  — Sources: news/1981563EDB445CA8
+- **Name:** Lynn Mielke — **Position:** Talbot County Council member — **Organization:**  — Sources: news/19738B65B9DFE330
+- **Name:** Malcolm Augustine — **Position:** Senator — **Organization:**  — Sources: news/197EB3CA1D36F930
+- **Name:** Marc Korman — **Position:** Committee Chair — **Organization:**  — Sources: news/197AC17F9E377940, news/19AFB81A0D6CC098
+- **Name:** Mark Rupp — **Position:** EPA Assistant Deputy Administrator — **Organization:**  — Sources: news/1981563EDB445CA8
+- **Name:** Mary Beth Carozza — **Position:** Senator — **Organization:**  — Sources: news/197EB3CA1D36F930
+- **Name:** Matt Neff — **Position:** curator of estuarine biology — **Organization:**  — Sources: news/198FD9465BA7BE10
+- **Name:** Matt Pluta — **Position:** Choptank riverkeeper and director of riverkeeper programs for ShoreRivers — **Organization:**  — Sources: news/195ADD0B2FB9A2D8, news/19996565990F4C68
+- **Name:** Mikaela Boley — **Position:** University of Maryland Extension principal agent associate — **Organization:**  — Sources: news/19432574B8F03F88
+- **Name:** Mike Detmer — **Position:** Dorchester County Council Vice President — **Organization:**  — Sources: news/194FFA2A5DB11300, news/19B9101D28177938
+- **Name:** Neil Gunter — **Position:** state marine police officer — **Organization:**  — Sources: news/194DEE28CC054540
+- **Name:** Nick Hargrove — **Position:** owner of Tilghman Island Seafood — **Organization:**  — Sources: news/1A252371635BD1A0
+- **Name:** Nicole Carlozo — **Position:** program manager at Maryland DNR — **Organization:** Maryland Department of Natural Resources — Sources: news/19739A34AE21B910
+- **Name:** Pamela Beidle — **Position:** Maryland Senator — **Organization:**  — Sources: news/1939343E6BAFB358
+- **Name:** Patrick Thomas — **Position:** county attorney — **Organization:**  — Sources: news/197F5860A6229E78
+- **Name:** Paul Pinsky — **Position:** Maryland Energy Administration Director — **Organization:**  — Sources: news/1939343E6BAFB358
+- **Name:** Paul Small — **Position:** CBF Vice President for Litigation — **Organization:** Chesapeake Bay Foundation — Sources: news/1A039C62D60E60A8
+- **Name:** Peter Goodwin — **Position:** UMCES President — **Organization:**  — Sources: news/1943F02EB2460A78
+- **Name:** Rachel Fazenbaker — **Position:** waterman — **Organization:**  — Sources: news/19739A2A8FC36680
+- **Name:** Rachel Jacobson — **Position:** Assistant Secretary of the Army for Installations, Energy and Environment — **Organization:**  — Sources: news/198D8960F733A338
+- **Name:** Rob Newberry — **Position:** Chair of the Delmarva Fisheries Association — **Organization:**  — Sources: news/19738B6628F415C8, news/1983F9E656B36AA8
+- **Name:** Rob Wittman — **Position:** U.S. Representative — **Organization:**  — Sources: news/194D0372B2A587C8
+- **Name:** Robert Ehrlich — **Position:** Former Governor — **Organization:**  — Sources: news/19D2195F62BBFBA8
+- **Name:** Ron Fithian — **Position:** Kent County Commission President — **Organization:**  — Sources: news/19738B6628F415C8, news/1983F9E656B36AA8
+- **Name:** Sara Love — **Position:** Delegate — **Organization:**  — Sources: news/19738B66CCECCAC8, news/19739A3400E01348, news/1977C762599A0808, news/197AC17F9E377940, news/19859F478E8F9D88
+- **Name:** Sarah Gavian — **Position:** chair of the Dorchester Dems Committee — **Organization:**  — Sources: news/19344042E46703F8
+- **Name:** Scott Budden — **Position:** Orchard Point president — **Organization:**  — Sources: news/194D0372B0A07C80
+- **Name:** Shane Brill — **Position:** permaculture educator at Washington College — **Organization:**  — Sources: news/198D8960EDA4B910, news/198D89610625B330, news/198E31BEF80A5428
+- **Name:** Shawn Garvin — **Position:** DNREC Secretary — **Organization:**  — Sources: news/194D0372DDCC4008
+- **Name:** Stephanie Alexander — **Position:** Manager of the UMCES Horn Point Laboratory — **Organization:**  — Sources: news/1A35EFD94A64CFF8
+- **Name:** Steve Arentz — **Position:** Del. — **Organization:**  — Sources: news/19739A3577648EA8, news/1977C762599A0808
+- **Name:** Steve Kline — **Position:** President and CEO of Eastern Shore Land Conservancy — **Organization:**  — Sources: news/1939343E69920378
+- **Name:** Steve Phillips — **Position:** CEO, Phillips Seafood — **Organization:**  — Sources: news/19D2195F62BBFBA8
+- **Name:** Susan Coomer — **Position:** First Vice-President of the Chestertown Garden Club — **Organization:**  — Sources: news/198D8960EDA4B910, news/198E31BEF80A5428
+- **Name:** Teri Moore — **Position:** chairperson for the 2024 U.S. Oyster Festival Committee — **Organization:** Rotary Club of Lexington Park — Sources: news/19C25A9523D487F8
+- **Name:** Tim Kaine — **Position:** Sen. (D-Virginia) — **Organization:**  — Sources: news/1981563EDB445CA8
+- **Name:** Travis Breeding — **Position:** County Commission President — **Organization:**  — Sources: news/19738B66CCECCAC8, news/19739A2BA96A18B8, news/19739A3400E01348
+- **Name:** Van Hollen — **Position:** U.S. Senator — **Organization:**  — Sources: news/197A6F6F139755C8
+- **Name:** Ward Slacum — **Position:** Executive Director, Oyster Recovery Partnership — **Organization:**  — Sources: news/19D2195F62BBFBA8
+- **Name:** Wes Moore — **Position:** Maryland Gov. — **Organization:**  — Sources: news/19738B6628F415C8, news/19859F478E8F9D88, news/198BA2D671D03280, news/1999656585E1E3D0, news/19AFB81A0D6CC098
+- **Name:** William Ferguson — **Position:** State Senate President — **Organization:**  — Sources: news/1939343E6BAFB358
+- **Name:** Zach Kelleher — **Position:** Sassafras Riverkeeper — **Organization:**  — Sources: news/198B8E098F8CC238

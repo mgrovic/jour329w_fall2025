@@ -548,7 +548,7 @@ Allison Colden — Maryland executive director
 
 Sara Love — Del.
 
-Lt. Gov. Aruna Miller, , . Miller's office coordinates state climate and environmental initiatives; useful for stories about how state policy shapes Eastern Shore aquaculture investment.
+Lt. Gov. Aruna Miller. Miller's office coordinates state climate and environmental initiatives; useful for stories about how state policy shapes Eastern Shore aquaculture investment.
 
 Comptroller Brooke Lierman — Comptroller of Maryland
 
